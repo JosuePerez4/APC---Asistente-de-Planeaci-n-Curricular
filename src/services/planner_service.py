@@ -8,6 +8,7 @@ Responsabilidades:
   - Determinar qué materias están habilitadas dado un conjunto de aprobadas.
   - Encontrar la mejor combinación de materias (máx. 20 créditos por semestre).
   - Generar el plan semestral completo de materias pendientes.
+  - Calcular qué materias desbloquea cada materia del plan.
 
 Esta capa es PURA (sin efectos secundarios de UI) y puede ser testeada de forma aislada.
 """
@@ -172,3 +173,31 @@ def generar_plan_personalizado(
         semestre_actual += 1
 
     return plan
+
+
+# ── Materias desbloqueadas ───────────────────────────────────────────────────
+
+def obtener_desbloqueadas_por_materia(
+    codigo: str,
+    perfil: PerfilEstudiante,
+) -> list[str]:
+    """
+    Retorna los nombres de las materias que tienen *codigo* como prerequisito directo.
+
+    Útil para mostrar en la card de plan: "Desbloquea: Cálculo Integral, Álgebra Lineal".
+
+    Args:
+        codigo: Código de la materia evaluada.
+        perfil: Perfil del estudiante (determina el conjunto de materias activo).
+
+    Returns:
+        Lista de nombres (str) de materias desbloqueadas directamente.
+    """
+    materias_perfil = obtener_materias_por_perfil(perfil)
+    desbloqueadas: list[str] = [
+        data["nombre"]
+        for cod, data in materias_perfil.items()
+        if codigo in data["prereq"]
+    ]
+    return desbloqueadas
+

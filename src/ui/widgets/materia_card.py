@@ -3,8 +3,8 @@ src/ui/widgets/materia_card.py
 ================================
 Widget de solo lectura para mostrar una materia en la vista del plan de estudios.
 
-Muestra: código con color de acento, badge de créditos, nombre completo
-y prerequisitos. Diseño tipo card con bordes sutiles y tipografía jerarquizada.
+Muestra: código con color de acento, badge de créditos, nombre completo,
+prerequisitos y nota de qué materias desbloquea al aprobarla.
 """
 from __future__ import annotations
 import customtkinter as ctk
@@ -19,6 +19,7 @@ class MateriaCard(ctk.CTkFrame):
         parent: Widget contenedor.
         codigo (str): Código único de la materia.
         materia (dict): Datos de la materia (nombre, creditos, prereq, reqCred).
+        desbloquea (list[str]): Nombres de materias que esta materia habilita al aprobarla.
     """
 
     def __init__(
@@ -26,6 +27,7 @@ class MateriaCard(ctk.CTkFrame):
         parent: ctk.CTkBaseClass,
         codigo: str,
         materia: dict,
+        desbloquea: list[str] | None = None,
         **kwargs,
     ) -> None:
         super().__init__(
@@ -36,9 +38,9 @@ class MateriaCard(ctk.CTkFrame):
             corner_radius=10,
             **kwargs,
         )
-        self._construir(codigo, materia)
+        self._construir(codigo, materia, desbloquea or [])
 
-    def _construir(self, codigo: str, materia: dict) -> None:
+    def _construir(self, codigo: str, materia: dict, desbloquea: list[str]) -> None:
         """Construye el layout interno de la card."""
         frame = ctk.CTkFrame(self, fg_color="transparent")
         frame.pack(fill="x", padx=16, pady=12)
@@ -95,3 +97,46 @@ class MateriaCard(ctk.CTkFrame):
             text_color=prereq_color,
             anchor="w",
         ).pack(anchor="w", pady=(4, 0))
+
+        # ── Nota: materias que desbloquea ─────────────────────────────────
+        if desbloquea:
+            # Truncar la lista si es muy larga para no desbordar la card
+            MAX_MOSTRAR = 3
+            if len(desbloquea) > MAX_MOSTRAR:
+                nombres = ", ".join(desbloquea[:MAX_MOSTRAR])
+                desbloquea_text = (
+                    f"{GLYPHS['sparkle_small']}  Desbloquea: {nombres} "
+                    f"(+{len(desbloquea) - MAX_MOSTRAR} más)"
+                )
+            else:
+                desbloquea_text = (
+                    f"{GLYPHS['sparkle_small']}  Desbloquea: {', '.join(desbloquea)}"
+                )
+
+            # Separador visual tenue
+            sep = ctk.CTkFrame(
+                frame,
+                fg_color=COLORES["border_subtle"],
+                height=1,
+                corner_radius=0,
+            )
+            sep.pack(fill="x", pady=(7, 0))
+
+            ctk.CTkLabel(
+                frame,
+                text=desbloquea_text,
+                font=FUENTE_PEQUEÑA,
+                text_color=COLORES["accent_success"],
+                wraplength=720,
+                justify="left",
+                anchor="w",
+            ).pack(anchor="w", pady=(5, 0))
+        else:
+            # Sin materias que desbloquee directamente
+            ctk.CTkLabel(
+                frame,
+                text=f"{GLYPHS['memo']}  No desbloquea materias nuevas directamente",
+                font=FUENTE_PEQUEÑA,
+                text_color=COLORES["text_muted"],
+                anchor="w",
+            ).pack(anchor="w", pady=(4, 0))

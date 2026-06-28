@@ -18,6 +18,7 @@ from src.config.theme import COLORES, FUENTE_H1, FUENTE_H2, FUENTE_NORMAL, FUENT
 from src.services.perfil_service import guardar_perfiles
 from src.services.planner_service import (
     generar_plan_personalizado,
+    obtener_desbloqueadas_por_materia,
     obtener_materias_por_perfil,
     obtener_semestres_por_perfil,
 )
@@ -197,7 +198,8 @@ class PlanView:
             # Instanciar cards para cada materia
             for cod in materias_sem:
                 if cod in materias_perfil:
-                    card = MateriaCard(scroll, cod, materias_perfil[cod])
+                    desbloquea = obtener_desbloqueadas_por_materia(cod, perfil)
+                    card = MateriaCard(scroll, cod, materias_perfil[cod], desbloquea=desbloquea)
                     card.pack(fill="x", pady=6, padx=6)
 
     def _construir_footer_stats(self) -> None:

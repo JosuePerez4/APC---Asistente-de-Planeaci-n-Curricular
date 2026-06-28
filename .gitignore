@@ -5,3 +5,6 @@
 *.pyc 
 *.db 
 *.sqlite 
+
+__pycache__/
+src/__pycache__/
