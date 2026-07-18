@@ -31,12 +31,14 @@ class PerfilEstudiante:
         materias_vistas: list[str] | None = None,
         fecha_creacion: str | None = None,
         incluir_proyecto_grado: bool = True,
+        materias_manuales: dict[str, int] | None = None,
     ) -> None:
         self.nombre = nombre
         self.materias_vistas: set[str] = set(materias_vistas) if materias_vistas else set()
         self.fecha_creacion: str = fecha_creacion or datetime.now().isoformat()
         self.fecha_actualizacion: str = datetime.now().isoformat()
         self.incluir_proyecto_grado: bool = incluir_proyecto_grado
+        self.materias_manuales: dict[str, int] = materias_manuales or {}
 
     # ── Serialización ────────────────────────────────────────────────────
 
@@ -51,6 +53,7 @@ class PerfilEstudiante:
             "fecha_creacion": self.fecha_creacion,
             "fecha_actualizacion": self.fecha_actualizacion,
             "incluir_proyecto_grado": self.incluir_proyecto_grado,
+            "materias_manuales": self.materias_manuales,
         }
 
     @classmethod
@@ -64,6 +67,7 @@ class PerfilEstudiante:
             materias_vistas=data.get("materias_vistas", []),
             fecha_creacion=data.get("fecha_creacion"),
             incluir_proyecto_grado=data.get("incluir_proyecto_grado", True),
+            materias_manuales=data.get("materias_manuales", {}),
         )
         # Restaurar la fecha de actualización original (no la de ahora)
         perfil.fecha_actualizacion = data.get(
@@ -75,5 +79,6 @@ class PerfilEstudiante:
         return (
             f"PerfilEstudiante(nombre={self.nombre!r}, "
             f"materias_vistas={len(self.materias_vistas)}, "
-            f"proyecto_grado={self.incluir_proyecto_grado})"
+            f"proyecto_grado={self.incluir_proyecto_grado}, "
+            f"materias_manuales={len(self.materias_manuales)})"
         )

@@ -94,11 +94,11 @@ def materias_habilitadas(
 
 
 def mejor_combinacion(
-    disponibles: list[str], perfil: PerfilEstudiante
+    disponibles: list[str], perfil: PerfilEstudiante, limite_creditos: int = 20
 ) -> list[str]:
     """
     Encuentra la combinación de materias disponibles que maximiza los créditos
-    sin superar el límite de 20 créditos por semestre.
+    sin superar el límite especificado de créditos por semestre.
 
     Algoritmo: fuerza bruta O(2^n). Razonable para n ≤ 15 materias disponibles.
 
@@ -112,7 +112,7 @@ def mejor_combinacion(
     for r in range(1, len(disponibles) + 1):
         for combo in itertools.combinations(disponibles, r):
             total = sum(materias_perfil[c]["creditos"] for c in combo)
-            if total <= 20 and total > max_creditos:
+            if total <= limite_creditos and total > max_creditos:
                 mejor = list(combo)
                 max_creditos = total
 
@@ -123,10 +123,8 @@ def generar_plan_personalizado(
     perfil: PerfilEstudiante,
 ) -> list[tuple[int, list[str]]]:
     """
-    Genera el plan de estudios personalizado para las materias pendientes del perfil.
-
-    Si el estudiante no tiene materias vistas, retorna el plan original en orden
-    de semestres. Si tiene materias vistas, simula semestres de avance óptimo.
+    Genera el plan de estudios personalizado para las materias pendientes del perfil,
+    respetando las asignaciones manuales especificadas por el usuario.
 
     Returns:
         Lista de tuplas (numero_semestre, [codigos_de_materias]).
@@ -134,16 +132,17 @@ def generar_plan_personalizado(
     materias_vistas = perfil.materias_vistas
     materias_perfil = obtener_materias_por_perfil(perfil)
     semestres_perfil = obtener_semestres_por_perfil(perfil)
+    materias_manuales = getattr(perfil, "materias_manuales", {})
 
-    # Sin historial: devolver el plan original sin simulación
-    if not materias_vistas:
+    # Sin historial y sin materias manuales: devolver el plan original sin simulación
+    if not materias_vistas and not materias_manuales:
         return [
             (num, list(mats.keys()))
             for num, mats in semestres_perfil.items()
         ]
 
-    # Con historial: simular avance desde el estado actual
-    aprobadas: list[str] = []
+    # Con historial o manuales: simular avance desde el estado actual
+    asignadas: set[str] = set()
     creditos_acumulados = sum(
         materias_perfil[cod]["creditos"]
         for cod in materias_vistas
@@ -152,25 +151,71 @@ def generar_plan_personalizado(
     materias_faltantes = set(materias_perfil.keys()) - materias_vistas
     semestre_actual = 1
     plan: list[tuple[int, list[str]]] = []
+    max_iteraciones = 30  # Límite de seguridad para evitar bucles infinitos
 
-    while len(aprobadas) < len(materias_faltantes):
-        disponibles = materias_habilitadas(
-            aprobadas, creditos_acumulados, materias_vistas, perfil
+    while len(asignadas) < len(materias_faltantes) and semestre_actual <= max_iteraciones:
+        # 1. Materias forzadas para este semestre
+        forced = [
+            cod for cod in materias_faltantes
+            if cod not in asignadas and materias_manuales.get(cod) == semestre_actual
+        ]
+        
+        forced_creditos = sum(
+            materias_perfil[cod]["creditos"]
+            for cod in forced
+            if cod in materias_perfil
         )
-        if not disponibles:
-            break  # Bloqueo curricular — no hay más materias disponibles
+        
+        # 2. Materias disponibles para autoprogramación (no manuales)
+        aprobadas_simuladas = list(asignadas)
+        disponibles_candidatas = materias_habilitadas(
+            aprobadas_simuladas, creditos_acumulados, materias_vistas, perfil
+        )
+        
+        disponibles = [
+            cod for cod in disponibles_candidatas
+            if cod not in materias_manuales
+        ]
+        
+        # 3. Optimizar el espacio libre en el semestre
+        capacidad_restante = 20 - forced_creditos
+        combo = []
+        if capacidad_restante > 0 and disponibles:
+            combo = mejor_combinacion(disponibles, perfil, limite_creditos=capacidad_restante)
+            
+        mats_semestre = forced + combo
+        
+        if mats_semestre:
+            plan.append((semestre_actual, mats_semestre))
+            asignadas.update(mats_semestre)
+            creditos_acumulados += sum(
+                materias_perfil[cod]["creditos"]
+                for cod in mats_semestre
+                if cod in materias_perfil
+            )
+            semestre_actual += 1
+        else:
+            # Ver si quedan asignaciones manuales para semestres futuros
+            tiene_futuras = any(
+                sem > semestre_actual
+                for cod, sem in materias_manuales.items()
+                if cod in materias_faltantes and cod not in asignadas
+            )
+            if tiene_futuras:
+                plan.append((semestre_actual, []))
+                semestre_actual += 1
+            else:
+                # Punto muerto o fin: meter todas las materias restantes en este semestre
+                remanentes = list(materias_faltantes - asignadas)
+                if remanentes:
+                    plan.append((semestre_actual, remanentes))
+                    asignadas.update(remanentes)
+                break
 
-        combo = mejor_combinacion(disponibles, perfil)
-        if not combo:
-            break  # No hay combinación válida (ej. todas exceden 20 créditos)
-
-        plan.append((semestre_actual, combo))
-
-        for cod in combo:
-            aprobadas.append(cod)
-            creditos_acumulados += materias_perfil[cod]["creditos"]
-
-        semestre_actual += 1
+    # Limpieza final por si se superó el límite de iteraciones
+    remanentes = list(materias_faltantes - asignadas)
+    if remanentes:
+        plan.append((semestre_actual, remanentes))
 
     return plan
 
@@ -200,4 +245,72 @@ def obtener_desbloqueadas_por_materia(
         if codigo in data["prereq"]
     ]
     return desbloqueadas
+
+
+# ── Verificación de conflictos en el plan ────────────────────────────────────
+
+def verificar_conflictos_plan(
+    plan: list[tuple[int, list[str]]],
+    perfil: PerfilEstudiante,
+) -> dict[str, list[str]]:
+    """
+    Verifica si hay conflictos de prerrequisitos o créditos mínimos en el plan actual.
+    Retorna un diccionario de códigos de materias a listas de advertencias en formato de texto.
+    """
+    materias_perfil = obtener_materias_por_perfil(perfil)
+    conflictos: dict[str, list[str]] = {}
+    
+    # Mapear materia -> semestre programado en el plan
+    materia_a_semestre = {}
+    for sem_num, materias_sem in plan:
+        for cod in materias_sem:
+            materia_a_semestre[cod] = sem_num
+
+    # Evaluar los requisitos semestre por semestre
+    for sem_num, materias_sem in plan:
+        # Materias aprobadas antes de sem_num (vistas + programadas en semestres menores)
+        aprobadas_antes = set(perfil.materias_vistas)
+        creditos_antes = sum(
+            materias_perfil[cod]["creditos"]
+            for cod in perfil.materias_vistas
+            if cod in materias_perfil
+        )
+        
+        for prev_sem, prev_mats in plan:
+            if prev_sem < sem_num:
+                for cod in prev_mats:
+                    aprobadas_antes.add(cod)
+                    if cod in materias_perfil:
+                        creditos_antes += materias_perfil[cod]["creditos"]
+        
+        for cod in materias_sem:
+            if cod not in materias_perfil:
+                continue
+            data = materias_perfil[cod]
+            msgs = []
+            
+            # 1. Verificar prerrequisitos
+            for pr in data["prereq"]:
+                if pr not in aprobadas_antes:
+                    pr_nombre = materias_perfil.get(pr, {}).get("nombre", pr)
+                    # Revisar si el prerrequisito está programado en el mismo o un semestre posterior
+                    if pr in materia_a_semestre:
+                        pr_sem = materia_a_semestre[pr]
+                        if pr_sem == sem_num:
+                            msgs.append(f"Prerrequisito '{pr_nombre}' está en el mismo semestre.")
+                        else:
+                            msgs.append(f"Prerrequisito '{pr_nombre}' programado para Semestre {pr_sem}.")
+                    else:
+                        msgs.append(f"Falta cursar el prerrequisito '{pr_nombre}'.")
+            
+            # 2. Verificar créditos acumulados
+            if creditos_antes < data["reqCred"]:
+                msgs.append(
+                    f"Requiere {data['reqCred']} créditos mínimos (tienes {creditos_antes})."
+                )
+                
+            if msgs:
+                conflictos[cod] = msgs
+                
+    return conflictos
 

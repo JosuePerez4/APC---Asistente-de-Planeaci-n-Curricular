@@ -21,6 +21,7 @@ from src.services.planner_service import (
     obtener_desbloqueadas_por_materia,
     obtener_materias_por_perfil,
     obtener_semestres_por_perfil,
+    verificar_conflictos_plan,
 )
 from src.ui.dialogs.custom_messagebox import CustomMessageBox
 from src.ui.widgets.materia_card import MateriaCard
@@ -147,6 +148,10 @@ class PlanView:
         perfil = self.app.perfil_actual
         plan = generar_plan_personalizado(perfil)
         materias_perfil = obtener_materias_por_perfil(perfil)
+        
+        # Obtener conflictos de prerrequisitos o créditos
+        conflictos_dict = verificar_conflictos_plan(plan, perfil)
+        total_semestres = max(sem_num for sem_num, _ in plan) if plan else 10
 
         if not plan:
             self.notebook.add(f"{GLYPHS['book']} Sin Pendientes")
@@ -162,27 +167,37 @@ class PlanView:
             return
 
         for semestre_num, materias_sem in plan:
-            tab_name = f"{GLYPHS['book']} Semestre {semestre_num}"
-            self.notebook.add(tab_name)
-            
-            tab = self.notebook.tab(tab_name)
-            tab.configure(fg_color=COLORES["bg_deep"])
-
             # Calcular créditos totales sugeridos para este semestre
             creditos_sem = sum(
                 materias_perfil[cod]["creditos"]
                 for cod in materias_sem
                 if cod in materias_perfil
             )
+
+            # Si hay sobrecarga, añadir emoji de advertencia a la pestaña
+            tab_name = f"Semestre {semestre_num}"
+            if creditos_sem > 20:
+                tab_name += " ⚠️"
+            
+            self.notebook.add(tab_name)
+            
+            tab = self.notebook.tab(tab_name)
+            tab.configure(fg_color=COLORES["bg_deep"])
             
             title_frame = ctk.CTkFrame(tab, fg_color="transparent")
             title_frame.pack(fill="x", pady=(8, 12))
 
+            title_text = f"{GLYPHS['book']} SEMESTRE {semestre_num}  ·  {creditos_sem} CRÉDITOS SUGERIDOS"
+            title_color = COLORES["text_primary"]
+            if creditos_sem > 20:
+                title_text += "  ⚠️ (SOBRECARGA: MÁX. 20 CRÉDITOS)"
+                title_color = COLORES["accent_warning"]
+
             ctk.CTkLabel(
                 title_frame,
-                text=f"{GLYPHS['book']} SEMESTRE {semestre_num}  ·  {creditos_sem} CRÉDITOS SUGERIDOS",
+                text=title_text,
                 font=FUENTE_H2,
-                text_color=COLORES["text_primary"],
+                text_color=title_color,
             ).pack(side="left", padx=6)
 
             # Contenedor scrollable
@@ -199,7 +214,16 @@ class PlanView:
             for cod in materias_sem:
                 if cod in materias_perfil:
                     desbloquea = obtener_desbloqueadas_por_materia(cod, perfil)
-                    card = MateriaCard(scroll, cod, materias_perfil[cod], desbloquea=desbloquea)
+                    card = MateriaCard(
+                        scroll,
+                        cod,
+                        materias_perfil[cod],
+                        desbloquea=desbloquea,
+                        on_move_materia=self.mover_materia,
+                        manual_semestre=perfil.materias_manuales.get(cod),
+                        total_semestres=total_semestres,
+                        conflictos=conflictos_dict.get(cod),
+                    )
                     card.pack(fill="x", pady=6, padx=6)
 
     def _construir_footer_stats(self) -> None:
@@ -275,6 +299,29 @@ class PlanView:
                 title=f"{GLYPHS['cancel']}  Error al Guardar",
                 message=f"No se pudieron guardar los perfiles:\n{exc}",
             ).get_result()
+
+    def mover_materia(self, codigo: str, nuevo_semestre: int | None) -> None:
+        """
+        Asigna manualmente una materia a un semestre o restablece su comportamiento automático.
+        """
+        perfil = self.app.perfil_actual
+        if nuevo_semestre is None:
+            # Eliminar asignación manual
+            perfil.materias_manuales.pop(codigo, None)
+        else:
+            # Fijar al semestre indicado
+            perfil.materias_manuales[codigo] = nuevo_semestre
+            
+        perfil.fecha_actualizacion = datetime.now().isoformat()
+        
+        # Guardar automáticamente los perfiles para que no se pierdan los movimientos manuales
+        try:
+            guardar_perfiles(self.app.perfiles)
+        except RuntimeError as exc:
+            print(f"[APC] Error al guardar tras mover materia: {exc}")
+            
+        # Reconstruir la vista completa con el nuevo plan recalculado
+        self._construir()
 
     # ── Editor de Materias Vistas (Modal) ─────────────────────────────────
 
@@ -441,6 +488,10 @@ class PlanView:
         """Aplica los cambios del editor al perfil real, guarda y regenera."""
         self.app.perfil_actual.materias_vistas = self.temp_materias_vistas
         self.app.perfil_actual.fecha_actualizacion = datetime.now().isoformat()
+        
+        # Limpiar de asignaciones manuales las materias que ahora están marcadas como cursadas/aprobadas
+        for cod in self.temp_materias_vistas:
+            self.app.perfil_actual.materias_manuales.pop(cod, None)
         
         try:
             guardar_perfiles(self.app.perfiles)
