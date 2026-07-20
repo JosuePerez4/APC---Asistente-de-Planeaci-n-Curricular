@@ -68,5 +68,6 @@ GLYPHS: dict[str, str] = {
     "warning": "\uE7BA",    # Triángulo de advertencia / Advertencia
     "cancel": "\uE711",     # Cruz / Cancelar
     "sparkle_small": "\uE99A", # Chispas pequeñas
+    "import": "",     # Descargar / Importar desde el portal
 }
 
