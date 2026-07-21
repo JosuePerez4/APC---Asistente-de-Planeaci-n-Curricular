@@ -24,6 +24,7 @@ from src.services.planner_service import (
     verificar_conflictos_plan,
 )
 from src.ui.dialogs.custom_messagebox import CustomMessageBox
+from src.ui.dialogs.import_pensum_dialog import ImportPensumDialog
 from src.ui.widgets.materia_card import MateriaCard
 from src.ui.widgets.materia_editor_row import MateriaEditorRow
 
@@ -116,6 +117,20 @@ class PlanView:
             corner_radius=8,
         )
         editar_btn.pack(side="left", padx=6)
+
+        # Botón para poblar el perfil desde el HTML del portal universitario
+        importar_btn = ctk.CTkButton(
+            btn_frame,
+            text=f"{GLYPHS['import']}  Importar Pénsum",
+            command=self.mostrar_importador,
+            fg_color=COLORES["bg_hover"],
+            hover_color=COLORES["accent_primary"],
+            text_color=COLORES["text_secondary"],
+            font=FUENTE_NORMAL,
+            height=38,
+            corner_radius=8,
+        )
+        importar_btn.pack(side="left", padx=6)
 
         # Botón secundario para persistir manualmente el plan actual
         guardar_btn = ctk.CTkButton(
@@ -486,20 +501,58 @@ class PlanView:
 
     def aplicar_cambios_editor(self, editor: ctk.CTkToplevel) -> None:
         """Aplica los cambios del editor al perfil real, guarda y regenera."""
-        self.app.perfil_actual.materias_vistas = self.temp_materias_vistas
-        self.app.perfil_actual.fecha_actualizacion = datetime.now().isoformat()
-        
-        # Limpiar de asignaciones manuales las materias que ahora están marcadas como cursadas/aprobadas
-        for cod in self.temp_materias_vistas:
-            self.app.perfil_actual.materias_manuales.pop(cod, None)
-        
+        editor.destroy()
+        self._persistir_y_regenerar(
+            self.temp_materias_vistas,
+            "Plan regenerado con los nuevos cambios.",
+        )
+
+    # ── Importación desde el Portal ───────────────────────────────────────
+
+    def mostrar_importador(self) -> None:
+        """Abre el diálogo que puebla el perfil desde el HTML del portal."""
+        perfil = self.app.perfil_actual
+        ImportPensumDialog(
+            self.parent.winfo_toplevel(),
+            nombre_perfil=perfil.nombre,
+            materias_vistas_actuales=set(perfil.materias_vistas),
+            on_aplicar=self.aplicar_importacion,
+        )
+
+    def aplicar_importacion(self, materias_vistas: set[str]) -> None:
+        """
+        Callback del importador: el portal es la autoridad, así que las materias
+        vistas se reemplazan (el diálogo ya mostró qué se desmarcaría).
+        """
+        self._persistir_y_regenerar(
+            materias_vistas,
+            f"Pénsum importado: {len(materias_vistas)} materias marcadas como vistas.",
+        )
+
+    # ── Persistencia Compartida ───────────────────────────────────────────
+
+    def _persistir_y_regenerar(self, materias_vistas: set[str], mensaje_exito: str) -> None:
+        """
+        Asigna las materias vistas al perfil, guarda y reconstruye la vista.
+
+        Compartido por el editor manual y el importador del portal: ambos
+        terminan en la misma operación y duplicarla dejaría que se desincronicen.
+        """
+        perfil = self.app.perfil_actual
+        perfil.materias_vistas = set(materias_vistas)
+        perfil.fecha_actualizacion = datetime.now().isoformat()
+
+        # Limpiar de asignaciones manuales las materias que ahora están marcadas
+        # como cursadas/aprobadas: ya no forman parte del plan a distribuir.
+        for cod in perfil.materias_vistas:
+            perfil.materias_manuales.pop(cod, None)
+
         try:
             guardar_perfiles(self.app.perfiles)
-            editor.destroy()
             self._construir()
             CustomMessageBox(
                 title=f"{GLYPHS['check']}  Éxito",
-                message="Plan regenerado con los nuevos cambios.",
+                message=mensaje_exito,
             ).get_result()
         except RuntimeError as exc:
             CustomMessageBox(
