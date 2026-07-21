@@ -1,11 +1,11 @@
 # Datos locales del usuario (progreso académico, pensum importado)
-data/*.json
-!data/pensum.ejemplo.json
+data/perfiles_estudios.json
 
 # Caches de Python
 __pycache__/
 *.py[cod]
 *.pyo
+.ruff_cache/
 
 # Entornos virtuales
 .venv/
