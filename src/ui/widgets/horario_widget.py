@@ -110,7 +110,7 @@ class HorarioWidget(ctk.CTkFrame):
         for i, hora in enumerate(range(hora_inicio, hora_fin), start=1):
             ctk.CTkLabel(
                 grid,
-                text=f"{hora:02d}:00",
+                text=f"{hora:02d}:00 - {(hora+1):02d}:00",
                 font=FUENTE_PEQUEÑA,
                 text_color=COLORES["text_muted"],
             ).grid(row=i, column=0, sticky="nsew", padx=2, pady=1)
