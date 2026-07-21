@@ -13,6 +13,7 @@ RuntimeError para que la capa de presentación la maneje con un diálogo.
 El archivo perfiles_estudios.json se busca siempre en la raíz del proyecto
 (directorio padre de `src/`), independientemente del CWD actual.
 """
+
 from __future__ import annotations
 
 import json
@@ -56,7 +57,7 @@ def guardar_perfiles(perfiles: dict[str, PerfilEstudiante]) -> None:
     try:
         # Asegurar que el directorio de datos existe
         PROFILES_FILE.parent.mkdir(parents=True, exist_ok=True)
-        
+
         datos = {nombre: perfil.to_dict() for nombre, perfil in perfiles.items()}
         with open(PROFILES_FILE, "w", encoding="utf-8") as f:
             json.dump(datos, f, ensure_ascii=False, indent=2)

@@ -9,12 +9,20 @@ Responsabilidades:
   - Proporcionar un editor interactivo para marcar materias como vistas.
   - Soportar el guardado y la regeneración automática al aplicar cambios.
 """
+
 from __future__ import annotations
 from datetime import datetime
 from typing import TYPE_CHECKING
 import customtkinter as ctk
 
-from src.config.theme import COLORES, FUENTE_H1, FUENTE_H2, FUENTE_NORMAL, FUENTE_PEQUEÑA, GLYPHS
+from src.config.theme import (
+    COLORES,
+    FUENTE_H1,
+    FUENTE_H2,
+    FUENTE_NORMAL,
+    FUENTE_PEQUEÑA,
+    GLYPHS,
+)
 from src.services.perfil_service import guardar_perfiles
 from src.services.planner_service import (
     generar_plan_personalizado,
@@ -25,6 +33,7 @@ from src.services.planner_service import (
 )
 from src.ui.dialogs.custom_messagebox import CustomMessageBox
 from src.ui.dialogs.import_pensum_dialog import ImportPensumDialog
+from src.ui.widgets.horario_widget import HorarioWidget
 from src.ui.widgets.materia_card import MateriaCard
 from src.ui.widgets.materia_editor_row import MateriaEditorRow
 
@@ -57,6 +66,7 @@ class PlanView:
         # Limpiar cualquier widget anterior para la regeneración limpia
         for widget in self.parent.winfo_children():
             widget.destroy()
+        self.horarios_expandidos = {}
 
         self._construir_header()
         self._construir_notebook()
@@ -90,8 +100,12 @@ class PlanView:
 
         # Etiqueta de información del perfil actual
         perfil = self.app.perfil_actual
-        proyecto_texto = "con Proyecto de Grado" if perfil.incluir_proyecto_grado else "sin Proyecto de Grado"
-        
+        proyecto_texto = (
+            "con Proyecto de Grado"
+            if perfil.incluir_proyecto_grado
+            else "sin Proyecto de Grado"
+        )
+
         info_label = ctk.CTkLabel(
             header,
             text=f"{GLYPHS['user']}  {perfil.nombre}   ·   {GLYPHS['plan']}  Plan {proyecto_texto}",
@@ -163,16 +177,16 @@ class PlanView:
         perfil = self.app.perfil_actual
         plan = generar_plan_personalizado(perfil)
         materias_perfil = obtener_materias_por_perfil(perfil)
-        
+
         # Obtener conflictos de prerrequisitos o créditos
         conflictos_dict = verificar_conflictos_plan(plan, perfil)
-        total_semestres = max(sem_num for sem_num, _ in plan) if plan else 10
+        total_semestres = max(sem_num for sem_num, _, _ in plan) if plan else 10
 
         if not plan:
             self.notebook.add(f"{GLYPHS['book']} Sin Pendientes")
             tab = self.notebook.tab(f"{GLYPHS['book']} Sin Pendientes")
             tab.configure(fg_color=COLORES["bg_deep"])
-            
+
             ctk.CTkLabel(
                 tab,
                 text=f"{GLYPHS['sparkles']}  ¡Felicidades! Has completado todas las materias de tu plan de estudios.",
@@ -181,7 +195,7 @@ class PlanView:
             ).pack(expand=True)
             return
 
-        for semestre_num, materias_sem in plan:
+        for semestre_num, materias_sem, asignacion_horario in plan:
             # Calcular créditos totales sugeridos para este semestre
             creditos_sem = sum(
                 materias_perfil[cod]["creditos"]
@@ -193,12 +207,12 @@ class PlanView:
             tab_name = f"Semestre {semestre_num}"
             if creditos_sem > 20:
                 tab_name += " ⚠️"
-            
+
             self.notebook.add(tab_name)
-            
+
             tab = self.notebook.tab(tab_name)
             tab.configure(fg_color=COLORES["bg_deep"])
-            
+
             title_frame = ctk.CTkFrame(tab, fg_color="transparent")
             title_frame.pack(fill="x", pady=(8, 12))
 
@@ -214,6 +228,35 @@ class PlanView:
                 font=FUENTE_H2,
                 text_color=title_color,
             ).pack(side="left", padx=6)
+
+            # ── Horario semanal del semestre (si hay grupos asignados) ────
+            # ── Horario semanal del semestre (colapsable) ──────────────────
+            if asignacion_horario:
+                toggle_btn = ctk.CTkButton(
+                    tab,
+                    text=f"{GLYPHS['calendar']}  Ocultar horario",
+                    command=lambda sem=semestre_num: self._toggle_horario(sem),
+                    fg_color=COLORES["bg_hover"],
+                    hover_color=COLORES["accent_primary"],
+                    text_color=COLORES["text_secondary"],
+                    font=FUENTE_PEQUEÑA,
+                    height=28,
+                    corner_radius=8,
+                    anchor="w",
+                )
+                toggle_btn.pack(fill="x", padx=4, pady=(0, 4))
+
+                horario_frame = ctk.CTkFrame(tab, fg_color="transparent")
+                horario_frame.pack(fill="x", padx=4, pady=(0, 10))
+                HorarioWidget(horario_frame, asignacion_horario, materias_perfil).pack(
+                    fill="x"
+                )
+
+                self.horarios_expandidos[semestre_num] = {
+                    "frame": horario_frame,
+                    "boton": toggle_btn,
+                    "expanded": True,
+                }
 
             # Contenedor scrollable
             scroll = ctk.CTkScrollableFrame(
@@ -256,7 +299,7 @@ class PlanView:
 
         perfil = self.app.perfil_actual
         materias_perfil = obtener_materias_por_perfil(perfil)
-        
+
         total_mats = len(materias_perfil)
         vistas_mats = len(perfil.materias_vistas)
         faltantes_mats = total_mats - vistas_mats
@@ -269,7 +312,11 @@ class PlanView:
         )
 
         porcentaje = (vistas_mats / total_mats * 100) if total_mats > 0 else 0.0
-        proyecto_texto = "con Proyecto de Grado" if perfil.incluir_proyecto_grado else "sin Proyecto de Grado"
+        proyecto_texto = (
+            "con Proyecto de Grado"
+            if perfil.incluir_proyecto_grado
+            else "sin Proyecto de Grado"
+        )
 
         stats_text = (
             f"{GLYPHS['plan']}  PROGRESO {proyecto_texto.upper()}: {vistas_mats}/{total_mats} materias ({porcentaje:.1f}%)   ·   "
@@ -326,15 +373,15 @@ class PlanView:
         else:
             # Fijar al semestre indicado
             perfil.materias_manuales[codigo] = nuevo_semestre
-            
+
         perfil.fecha_actualizacion = datetime.now().isoformat()
-        
+
         # Guardar automáticamente los perfiles para que no se pierdan los movimientos manuales
         try:
             guardar_perfiles(self.app.perfiles)
         except RuntimeError as exc:
             print(f"[APC] Error al guardar tras mover materia: {exc}")
-            
+
         # Reconstruir la vista completa con el nuevo plan recalculado
         self._construir()
 
@@ -343,7 +390,9 @@ class PlanView:
     def mostrar_editor(self) -> None:
         """Abre la ventana modal interactiva del editor de materias."""
         editor = ctk.CTkToplevel(self.parent.winfo_toplevel())
-        editor.title(f"{GLYPHS['edit']}  Editor de Materias — {self.app.perfil_actual.nombre}")
+        editor.title(
+            f"{GLYPHS['edit']}  Editor de Materias — {self.app.perfil_actual.nombre}"
+        )
         editor.geometry("1100x750")
         editor.transient(self.parent.winfo_toplevel())
         editor.grab_set()
@@ -358,7 +407,11 @@ class PlanView:
         main_frame.pack(fill="both", expand=True, padx=20, pady=20)
 
         # Header del editor
-        proyecto_texto = "con Proyecto de Grado" if self.app.perfil_actual.incluir_proyecto_grado else "sin Proyecto de Grado"
+        proyecto_texto = (
+            "con Proyecto de Grado"
+            if self.app.perfil_actual.incluir_proyecto_grado
+            else "sin Proyecto de Grado"
+        )
         ctk.CTkLabel(
             main_frame,
             text=f"{GLYPHS['edit']}  EDITANDO MATERIAS VISTAS — {self.app.perfil_actual.nombre} ({proyecto_texto})",
@@ -485,6 +538,18 @@ class PlanView:
             estado["content_frame"].pack(fill="x", padx=12, pady=(8, 12))
             estado["expanded"] = True
 
+    def _toggle_horario(self, semestre_num: int) -> None:
+        """Muestra u oculta la rejilla de horario de un semestre en el plan."""
+        estado = self.horarios_expandidos[semestre_num]
+        if estado["expanded"]:
+            estado["frame"].pack_forget()
+            estado["boton"].configure(text=f"{GLYPHS['calendar']}  Ver horario")
+            estado["expanded"] = False
+        else:
+            estado["frame"].pack(fill="x", padx=4, pady=(0, 10))
+            estado["boton"].configure(text=f"{GLYPHS['calendar']}  Ocultar horario")
+            estado["expanded"] = True
+
     def toggle_materia_editor(self, codigo: str, var: ctk.BooleanVar) -> None:
         """Callback del checkbox para actualizar el set temporal de aprobadas."""
         if var.get():
@@ -496,8 +561,12 @@ class PlanView:
         for sem_num, estado in self.semestres_expandidos.items():
             materias_sem = estado["materias_sem"]
             if codigo in materias_sem:
-                vistas_sem = sum(1 for cod in materias_sem if cod in self.temp_materias_vistas)
-                estado["count_label"].configure(text=f"({vistas_sem}/{len(materias_sem)} vistas)  ")
+                vistas_sem = sum(
+                    1 for cod in materias_sem if cod in self.temp_materias_vistas
+                )
+                estado["count_label"].configure(
+                    text=f"({vistas_sem}/{len(materias_sem)} vistas)  "
+                )
 
     def aplicar_cambios_editor(self, editor: ctk.CTkToplevel) -> None:
         """Aplica los cambios del editor al perfil real, guarda y regenera."""
@@ -531,7 +600,9 @@ class PlanView:
 
     # ── Persistencia Compartida ───────────────────────────────────────────
 
-    def _persistir_y_regenerar(self, materias_vistas: set[str], mensaje_exito: str) -> None:
+    def _persistir_y_regenerar(
+        self, materias_vistas: set[str], mensaje_exito: str
+    ) -> None:
         """
         Asigna las materias vistas al perfil, guarda y reconstruye la vista.
 

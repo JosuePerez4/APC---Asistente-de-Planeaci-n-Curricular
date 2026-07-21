@@ -11,6 +11,7 @@ puedan presentarlos a su manera.
 El HTML se obtiene en el portal con la sesión abierta: F12 → clic derecho
 sobre la <table> del pénsum → Copy → Copy outerHTML.
 """
+
 from __future__ import annotations
 
 import re
@@ -27,14 +28,25 @@ from bs4 import BeautifulSoup
 _RE_PRERREQ = re.compile(r"\bPrerrequisito\s*:", re.IGNORECASE)
 _RE_CRE = re.compile(r"\bCre\s*:\s*(\d+)", re.IGNORECASE)
 _RE_CODIGO = re.compile(r"\d{7}")
-_RE_HORAS_CRED = re.compile(r"horas\s*:\s*(\d+).*?Cred\s*:\s*(\d+)", re.IGNORECASE | re.DOTALL)
+_RE_HORAS_CRED = re.compile(
+    r"horas\s*:\s*(\d+).*?Cred\s*:\s*(\d+)", re.IGNORECASE | re.DOTALL
+)
 _RE_PERIODO = re.compile(r"\b(\d{4}-\d)\b")
 
 # Ordinal en español → número de semestre. Lookup O(1).
 _SEMESTRES = {
-    "PRIMER": 1, "SEGUNDO": 2, "TERCER": 3, "CUARTO": 4, "QUINTO": 5,
-    "SEXTO": 6, "SEPTIMO": 7, "SÉPTIMO": 7, "OCTAVO": 8, "NOVENO": 9,
-    "DECIMO": 10, "DÉCIMO": 10,
+    "PRIMER": 1,
+    "SEGUNDO": 2,
+    "TERCER": 3,
+    "CUARTO": 4,
+    "QUINTO": 5,
+    "SEXTO": 6,
+    "SEPTIMO": 7,
+    "SÉPTIMO": 7,
+    "OCTAVO": 8,
+    "NOVENO": 9,
+    "DECIMO": 10,
+    "DÉCIMO": 10,
 }
 
 # Una materia está aprobada si y solo si lleva esta clase (verde). Cualquier
@@ -170,7 +182,9 @@ def parse_pensum(html: str) -> dict:
                 continue
             (electivas if materia["electiva"] else materias).append(materia)
 
-    clave = lambda m: (m["semestre"], m["codigo"])
+    def clave(m):
+        return (m["semestre"], m["codigo"])
+
     return {
         "materias": sorted(materias, key=clave),
         "electivas": sorted(electivas, key=clave),

@@ -8,6 +8,7 @@ Responsabilidades:
   - Administrar el estado de perfiles cargados y perfil_actual.
   - Proveer funciones de enrutamiento limpio: mostrar_perfiles() / mostrar_plan().
 """
+
 from __future__ import annotations
 import customtkinter as ctk
 
@@ -27,7 +28,7 @@ class PlanEstudiosApp:
         self.root = root
         self.root.title("Asistente de Planeación Curricular — APC")
         self.root.geometry("1400x850")
-        
+
         # Configurar apariencia del root frame
         self.root.configure(fg_color=COLORES["bg_deep"])
 

@@ -14,6 +14,7 @@ Uso:
 El HTML se obtiene en el portal con la sesión abierta: F12 → clic derecho
 sobre la <table> del pénsum → Copy → Copy outerHTML.
 """
+
 from __future__ import annotations
 
 import argparse
@@ -54,20 +55,28 @@ def _resumen(pensum: dict) -> None:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[3])
     parser.add_argument("html", help="Archivo HTML del pénsum guardado desde el portal")
-    parser.add_argument("-o", "--output", default="data/pensum.json",
-                        help="Ruta del JSON de salida (por defecto: data/pensum.json)")
+    parser.add_argument(
+        "-o",
+        "--output",
+        default="data/pensum.json",
+        help="Ruta del JSON de salida (por defecto: data/pensum.json)",
+    )
     args = parser.parse_args()
 
     with open(args.html, encoding="utf-8") as f:
         pensum = parse_pensum(f.read())
 
     if not pensum["materias"] and not pensum["electivas"]:
-        print("error: no se encontró ninguna materia; ¿el HTML contiene la tabla del pénsum?",
-              file=sys.stderr)
+        print(
+            "error: no se encontró ninguna materia; ¿el HTML contiene la tabla del pénsum?",
+            file=sys.stderr,
+        )
         return 1
 
     with open(args.output, "w", encoding="utf-8") as f:
-        json.dump({k: pensum[k] for k in _CLAVES_SALIDA}, f, ensure_ascii=False, indent=2)
+        json.dump(
+            {k: pensum[k] for k in _CLAVES_SALIDA}, f, ensure_ascii=False, indent=2
+        )
 
     _resumen(pensum)
     print(f"\nEscrito en {args.output}", file=sys.stderr)

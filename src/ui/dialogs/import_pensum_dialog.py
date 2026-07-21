@@ -10,6 +10,7 @@ intermedio no es opcional.
 
 Toda la lógica vive en `pensum_import_service`; aquí solo hay presentación.
 """
+
 from __future__ import annotations
 
 from typing import Callable

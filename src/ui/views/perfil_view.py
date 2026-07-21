@@ -9,6 +9,7 @@ Responsabilidades:
   - Permitir eliminar perfiles con confirmación.
   - Navegar hacia la vista del plan al seleccionar un perfil.
 """
+
 from __future__ import annotations
 
 from datetime import datetime
@@ -16,7 +17,20 @@ from typing import TYPE_CHECKING
 
 import customtkinter as ctk
 
-from src.config.theme import COLORES, FUENTE_H1, FUENTE_H2, FUENTE_NORMAL, FUENTE_PEQUEÑA, GLYPHS
+import subprocess
+import sys
+from pathlib import Path
+
+from src.config import pensum_data
+
+from src.config.theme import (
+    COLORES,
+    FUENTE_H1,
+    FUENTE_H2,
+    FUENTE_NORMAL,
+    FUENTE_PEQUEÑA,
+    GLYPHS,
+)
 from src.models.perfil import PerfilEstudiante
 from src.services.perfil_service import guardar_perfiles
 from src.services.planner_service import obtener_materias_por_perfil
@@ -125,7 +139,11 @@ class PerfilView:
         vistas = len(perfil.materias_vistas)
         porcentaje = vistas / total if total > 0 else 0.0
         fecha = datetime.fromisoformat(perfil.fecha_actualizacion).strftime("%d/%m/%Y")
-        proyecto = "Con Proyecto de Grado" if perfil.incluir_proyecto_grado else "Sin Proyecto de Grado"
+        proyecto = (
+            "Con Proyecto de Grado"
+            if perfil.incluir_proyecto_grado
+            else "Sin Proyecto de Grado"
+        )
 
         # Marco de la card con borde de acento
         card = ctk.CTkFrame(
@@ -208,13 +226,16 @@ class PerfilView:
         ).pack(side="right")
 
     def _construir_footer(self) -> None:
-        """Footer fijo con botón para crear nuevo perfil."""
+        """Footer fijo con botones para crear perfil y regenerar el pénsum."""
         footer = ctk.CTkFrame(self.parent, fg_color="transparent", height=72)
         footer.pack(fill="x", pady=(14, 0))
         footer.pack_propagate(False)
 
+        fila = ctk.CTkFrame(footer, fg_color="transparent")
+        fila.pack(fill="both", expand=True, pady=10)
+
         ctk.CTkButton(
-            footer,
+            fila,
             text=f"{GLYPHS['sparkles']}  Nuevo Perfil",
             command=self._crear_perfil,
             fg_color=COLORES["accent_primary"],
@@ -223,7 +244,66 @@ class PerfilView:
             font=FUENTE_H2,
             height=50,
             corner_radius=12,
-        ).pack(fill="x", expand=True, pady=10)
+        ).pack(side="left", fill="x", expand=True, padx=(0, 8))
+
+        ctk.CTkButton(
+            fila,
+            text=f"{GLYPHS['import']}  Regenerar Pénsum",
+            command=self._regenerar_pensum,
+            fg_color=COLORES["bg_hover"],
+            hover_color=COLORES["accent_primary"],
+            text_color=COLORES["text_secondary"],
+            font=FUENTE_H2,
+            height=50,
+            corner_radius=12,
+        ).pack(side="left", fill="x", expand=True, padx=(8, 0))
+
+    def _regenerar_pensum(self) -> None:
+        """
+        Ejecuta el script que trae los grupos y horarios vigentes del portal y
+        recarga `pensum_data` en caliente, sin reiniciar la app.
+        """
+        token = ctk.CTkInputDialog(
+            text=f"{GLYPHS['import']}  Pega tu token de sesión del portal:",
+            title="Regenerar Pénsum",
+        ).get_input()
+        if not token:
+            return
+
+        raiz = Path(__file__).resolve().parent.parent.parent.parent
+        script = raiz / "tools" / "importar_horario_pensum.py"
+
+        self.app.root.config(cursor="watch")
+        self.app.root.update_idletasks()
+        try:
+            resultado = subprocess.run(
+                [sys.executable, str(script), token.strip()],
+                capture_output=True,
+                text=True,
+                timeout=60,
+            )
+        except Exception as exc:  # noqa: BLE001 — errores de red/proceso son variados
+            self.app.root.config(cursor="")
+            CustomMessageBox(
+                title=f"{GLYPHS['cancel']}  Error",
+                message=f"No se pudo ejecutar la actualización:\n{exc}",
+            ).get_result()
+            return
+        self.app.root.config(cursor="")
+
+        if resultado.returncode != 0:
+            CustomMessageBox(
+                title=f"{GLYPHS['cancel']}  Error al regenerar",
+                message=f"El script terminó con errores:\n{resultado.stderr[-400:]}",
+            ).get_result()
+            return
+
+        pensum_data.recargar()
+        CustomMessageBox(
+            title=f"{GLYPHS['check']}  Pénsum actualizado",
+            message="Se actualizaron las materias y horarios vigentes.",
+        ).get_result()
+        self.app.mostrar_perfiles()
 
     # ── Acciones ──────────────────────────────────────────────────────────
 
@@ -247,7 +327,9 @@ class PerfilView:
         try:
             guardar_perfiles(self.app.perfiles)
         except RuntimeError as exc:
-            CustomMessageBox(title=f"{GLYPHS['cancel']}  Error", message=str(exc)).get_result()
+            CustomMessageBox(
+                title=f"{GLYPHS['cancel']}  Error", message=str(exc)
+            ).get_result()
 
         if self.app.perfil_actual and self.app.perfil_actual.nombre == nombre:
             self.app.perfil_actual = None
@@ -297,7 +379,9 @@ class PerfilView:
         try:
             guardar_perfiles(self.app.perfiles)
         except RuntimeError as exc:
-            CustomMessageBox(title=f"{GLYPHS['cancel']}  Error al guardar", message=str(exc)).get_result()
+            CustomMessageBox(
+                title=f"{GLYPHS['cancel']}  Error al guardar", message=str(exc)
+            ).get_result()
 
         self.app.perfil_actual = nuevo
         self.app.mostrar_plan()

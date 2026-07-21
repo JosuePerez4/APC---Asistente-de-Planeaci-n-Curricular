@@ -14,11 +14,12 @@ genéricos (SOCIOHUMANISTICA_I, ELECTIVA_PROFESIONAL_III…). Volcar los código
 reales rompería el conteo de créditos, así que hay que asignar cada electiva
 aprobada a un slot equivalente.
 """
+
 from __future__ import annotations
 
 from dataclasses import dataclass, field
 
-from src.config.curriculum import MATERIAS, SEMESTRES
+from src.config.pensum_data import MATERIAS, SEMESTRES
 from src.services.pensum_parser import APROBADA, parse_pensum
 
 
@@ -35,6 +36,7 @@ class ResultadoImportacion:
         total_portal: materias encontradas en el HTML.
         aprobadas: cuántas de ellas están aprobadas.
     """
+
     materias_vistas: set[str] = field(default_factory=set)
     electivas_mapeadas: list[tuple[str, str]] = field(default_factory=list)
     desmarcadas: list[str] = field(default_factory=list)
@@ -45,12 +47,9 @@ class ResultadoImportacion:
 
 def _slots_por_creditos() -> dict[int, list[str]]:
     """
-    Agrupa los placeholders de electiva de `curriculum.py` por número de créditos,
-    en orden de semestre.
-
-    No se hardcodean: si cambias los placeholders en `curriculum.py`, el mapeo se
-    adapta solo. Un código es placeholder si no es numérico — las materias reales
-    del pénsum siempre tienen código de 7 dígitos.
+    Agrupa los placeholders de electiva de `pensum_data.py` por número de
+    créditos, en orden de semestre. Un código es placeholder si no es
+    numérico — las materias reales siempre tienen código de 7 dígitos.
     """
     slots: dict[int, list[str]] = {}
     for _sem_num, materias_sem in sorted(SEMESTRES.items()):
@@ -70,9 +69,6 @@ def construir_importacion(
     No modifica nada. `materias_vistas_actuales` sirve solo para calcular qué
     se desmarcaría, ya que el portal es la autoridad y `materias_vistas` se
     reemplaza en vez de fusionarse.
-
-    Complejidad O(n) sobre las materias del portal; el único paso ordenado es
-    el de electivas aprobadas, O(k log k) con k ≤ 9.
     """
     pensum = parse_pensum(html)
     resultado = ResultadoImportacion()
@@ -88,7 +84,6 @@ def construir_importacion(
         )
         return resultado
 
-    # ── Obligatorias: mapean 1:1 por código ────────────────────────────────
     aprobadas_oblig = [m for m in obligatorias if m["estado"] == APROBADA]
     for materia in aprobadas_oblig:
         if materia["codigo"] in MATERIAS:
@@ -96,12 +91,9 @@ def construir_importacion(
         else:
             resultado.avisos.append(
                 f"{materia['codigo']} ({materia['nombre']}) está aprobada en el portal "
-                f"pero no existe en el plan de la app; se ignora."
+                f"pero no existe en el pénsum actual; se ignora."
             )
 
-    # ── Electivas: se asignan a placeholders del mismo número de créditos ──
-    # Se ordenan por periodo cursado para que la asignación sea determinista y
-    # las electivas más antiguas caigan en los slots de semestres más tempranos.
     aprobadas_elect = sorted(
         (m for m in electivas if m["estado"] == APROBADA),
         key=lambda m: (m["periodo"] or "", m["codigo"]),
@@ -129,9 +121,10 @@ def construir_importacion(
         resultado.materias_vistas.add(slot)
         resultado.electivas_mapeadas.append((materia["nombre"], slot))
 
-    # ── Qué se perdería al reemplazar ──────────────────────────────────────
     if materias_vistas_actuales:
-        resultado.desmarcadas = sorted(materias_vistas_actuales - resultado.materias_vistas)
+        resultado.desmarcadas = sorted(
+            materias_vistas_actuales - resultado.materias_vistas
+        )
 
     return resultado
 

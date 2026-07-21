@@ -7,6 +7,7 @@ Muestra el código, nombre, créditos y prerequisitos de una materia junto
 con un checkbox que indica si el estudiante la ha cursado. El badge de
 estado (Vista / Pendiente) refleja el valor inicial del checkbox.
 """
+
 from __future__ import annotations
 import customtkinter as ctk
 from src.config.theme import COLORES, FUENTE_H2, FUENTE_NORMAL, FUENTE_PEQUEÑA, GLYPHS

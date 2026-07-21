@@ -9,6 +9,7 @@ El formato de serialización es 100 % compatible con el JSON existente
 (perfiles_estudios.json), garantizando que el perfil de Daniel
 y cualquier otro perfil previo se carguen sin modificación.
 """
+
 from __future__ import annotations
 from datetime import datetime
 
@@ -34,7 +35,9 @@ class PerfilEstudiante:
         materias_manuales: dict[str, int] | None = None,
     ) -> None:
         self.nombre = nombre
-        self.materias_vistas: set[str] = set(materias_vistas) if materias_vistas else set()
+        self.materias_vistas: set[str] = (
+            set(materias_vistas) if materias_vistas else set()
+        )
         self.fecha_creacion: str = fecha_creacion or datetime.now().isoformat()
         self.fecha_actualizacion: str = datetime.now().isoformat()
         self.incluir_proyecto_grado: bool = incluir_proyecto_grado

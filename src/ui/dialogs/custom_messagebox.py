@@ -16,9 +16,10 @@ Uso:
     )
     resultado = dialogo.get_result()  # Retorna "Cancelar" o "Confirmar" o None
 """
+
 from __future__ import annotations
 import customtkinter as ctk
-from src.config.theme import COLORES, FUENTE_H2, FUENTE_NORMAL, FUENTE_PEQUEÑA
+from src.config.theme import COLORES, FUENTE_H2, FUENTE_NORMAL
 
 
 class CustomMessageBox(ctk.CTkToplevel):

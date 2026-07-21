@@ -6,6 +6,7 @@ Widget de solo lectura para mostrar una materia en la vista del plan de estudios
 Muestra: código con color de acento, badge de créditos, nombre completo,
 prerequisitos y nota de qué materias desbloquea al aprobarla.
 """
+
 from __future__ import annotations
 import customtkinter as ctk
 from src.config.theme import COLORES, FUENTE_H2, FUENTE_NORMAL, FUENTE_PEQUEÑA, GLYPHS
@@ -123,10 +124,12 @@ class MateriaCard(ctk.CTkFrame):
             default_val = "Auto (Reorganizar)"
             if manual_semestre is not None:
                 default_val = f"Semestre {manual_semestre}"
-                
+
             # Opciones: Auto, Semestre 1, ..., Semestre N+1
-            options = ["Auto (Reorganizar)"] + [f"Semestre {i}" for i in range(1, total_semestres + 2)]
-            
+            options = ["Auto (Reorganizar)"] + [
+                f"Semestre {i}" for i in range(1, total_semestres + 2)
+            ]
+
             if default_val not in options:
                 options.append(default_val)
 
