@@ -1,0 +1,7119 @@
+{
+  "subjects": [
+    {
+      "id": 1124,
+      "code": "1150615",
+      "name": "Habilidades esenciales para el ingeniero de sistemas",
+      "credits": 2,
+      "semester": 6,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [],
+      "groups": [
+        {
+          "id": 1813,
+          "code": "1154308-A",
+          "teacher": "Jaramillo Vega Jefferson Ferney",
+          "program": "115",
+          "maxCapacity": 20,
+          "availableCapacity": 1,
+          "sessions": [
+            {
+              "id": 41324,
+              "day": 3,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "SC402"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1126,
+      "code": "1151058",
+      "name": "Proyecto academico",
+      "credits": 15,
+      "semester": 10,
+      "requiredCredits": 150,
+      "type": "ELECTIVE",
+      "requisites": [],
+      "groups": []
+    },
+    {
+      "id": 1128,
+      "code": "1151060",
+      "name": "Deuda tecnica en el desarrollo de software",
+      "credits": 3,
+      "semester": 9,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1165,
+          "name": "Ingenieria de software",
+          "code": "1155805"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": 1131,
+      "code": "1155301",
+      "name": "Calculo vectorial",
+      "credits": 4,
+      "semester": 3,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1244,
+          "name": "Calculo integral",
+          "code": "1155201"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1878,
+          "code": "1110301-A",
+          "teacher": "Cuellar De Fex Maria Patricia",
+          "program": "111",
+          "maxCapacity": 45,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41489,
+              "day": 2,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "AO202"
+            },
+            {
+              "id": 41490,
+              "day": 4,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "AO303"
+            }
+          ]
+        },
+        {
+          "id": 1879,
+          "code": "1110301-B",
+          "teacher": "Ortega Sierra Alvaro",
+          "program": "111",
+          "maxCapacity": 40,
+          "availableCapacity": 4,
+          "sessions": [
+            {
+              "id": 41491,
+              "day": 1,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SC103"
+            },
+            {
+              "id": 41492,
+              "day": 2,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "SP107"
+            }
+          ]
+        },
+        {
+          "id": 1880,
+          "code": "1154301-A",
+          "teacher": "Luna Pereira Jose Ivan",
+          "program": "115",
+          "maxCapacity": 40,
+          "availableCapacity": 8,
+          "sessions": [
+            {
+              "id": 41499,
+              "day": 0,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SP108"
+            },
+            {
+              "id": 41500,
+              "day": 2,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "SG202"
+            }
+          ]
+        },
+        {
+          "id": 1881,
+          "code": "1160030-A",
+          "teacher": "Ovalles Rodriguez Gustavo Adolfo",
+          "program": "116",
+          "maxCapacity": 40,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41501,
+              "day": 0,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SE301"
+            },
+            {
+              "id": 41502,
+              "day": 3,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "AG205"
+            }
+          ]
+        },
+        {
+          "id": 1882,
+          "code": "1160030-B",
+          "teacher": "Ovalles Rodriguez Gustavo Adolfo",
+          "program": "116",
+          "maxCapacity": 40,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41503,
+              "day": 0,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SA205"
+            },
+            {
+              "id": 41504,
+              "day": 4,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SG301"
+            }
+          ]
+        },
+        {
+          "id": 1883,
+          "code": "1191301-A",
+          "teacher": "Serpa Jimenez Alejandra Maria",
+          "program": "119",
+          "maxCapacity": 40,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41505,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "FU302"
+            },
+            {
+              "id": 41506,
+              "day": 3,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "FU302"
+            }
+          ]
+        },
+        {
+          "id": 1884,
+          "code": "1191301-B",
+          "teacher": "Serpa Jimenez Alejandra Maria",
+          "program": "119",
+          "maxCapacity": 40,
+          "availableCapacity": 2,
+          "sessions": [
+            {
+              "id": 41507,
+              "day": 1,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "FU301"
+            },
+            {
+              "id": 41508,
+              "day": 3,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "FU302"
+            }
+          ]
+        },
+        {
+          "id": 1945,
+          "code": "1110301-C",
+          "teacher": "Vargas Mantilla Cesar Orlando",
+          "program": "111",
+          "maxCapacity": 1,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41493,
+              "day": 0,
+              "beginHour": 1,
+              "endHour": 5,
+              "classroom": "FU101"
+            },
+            {
+              "id": 41494,
+              "day": 1,
+              "beginHour": 1,
+              "endHour": 5,
+              "classroom": "FU101"
+            },
+            {
+              "id": 41495,
+              "day": 2,
+              "beginHour": 1,
+              "endHour": 5,
+              "classroom": "FU101"
+            },
+            {
+              "id": 41496,
+              "day": 3,
+              "beginHour": 1,
+              "endHour": 5,
+              "classroom": "FU101"
+            },
+            {
+              "id": 41497,
+              "day": 4,
+              "beginHour": 1,
+              "endHour": 5,
+              "classroom": "FU101"
+            },
+            {
+              "id": 41498,
+              "day": 5,
+              "beginHour": 1,
+              "endHour": 5,
+              "classroom": "FU101"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1132,
+      "code": "1155401",
+      "name": "Ecuaciones diferenciales",
+      "credits": 4,
+      "semester": 4,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1131,
+          "name": "Calculo vectorial",
+          "code": "1155301"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1447,
+          "code": "1110401-A",
+          "teacher": "Saenz Contreras Daniel",
+          "program": "111",
+          "maxCapacity": 45,
+          "availableCapacity": 3,
+          "sessions": [
+            {
+              "id": 41598,
+              "day": 0,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "AO401"
+            },
+            {
+              "id": 41599,
+              "day": 2,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "AG203"
+            }
+          ]
+        },
+        {
+          "id": 1448,
+          "code": "1110401-B",
+          "teacher": "Vergel Ortega Mawency",
+          "program": "111",
+          "maxCapacity": 45,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41600,
+              "day": 0,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SP109"
+            },
+            {
+              "id": 41601,
+              "day": 2,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SE101"
+            }
+          ]
+        },
+        {
+          "id": 1449,
+          "code": "1191401-A",
+          "teacher": "Luna Pereira Jose Ivan",
+          "program": "119",
+          "maxCapacity": 45,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41602,
+              "day": 0,
+              "beginHour": 10,
+              "endHour": 12,
+              "classroom": "SP206"
+            },
+            {
+              "id": 41603,
+              "day": 2,
+              "beginHour": 12,
+              "endHour": 14,
+              "classroom": "SF204"
+            }
+          ]
+        },
+        {
+          "id": 1450,
+          "code": "1191401-B",
+          "teacher": "Rincon Leal Olga Lucy",
+          "program": "119",
+          "maxCapacity": 20,
+          "availableCapacity": 5,
+          "sessions": [
+            {
+              "id": 41604,
+              "day": 3,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SC101"
+            },
+            {
+              "id": 41605,
+              "day": 4,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SC103"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1133,
+      "code": "1155501",
+      "name": "Analisis numerico",
+      "credits": 3,
+      "semester": 5,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1132,
+          "name": "Ecuaciones diferenciales",
+          "code": "1155401"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1451,
+          "code": "1155501-A",
+          "teacher": "Mariño Luis Fernando",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 30,
+          "sessions": [
+            {
+              "id": 41643,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SP106"
+            },
+            {
+              "id": 41644,
+              "day": 2,
+              "beginHour": 1,
+              "endHour": 2,
+              "classroom": "SP109"
+            }
+          ]
+        },
+        {
+          "id": 1452,
+          "code": "1155501-B",
+          "teacher": "Mariño Luis Fernando",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 26,
+          "sessions": [
+            {
+              "id": 41645,
+              "day": 2,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "FU102"
+            },
+            {
+              "id": 41646,
+              "day": 4,
+              "beginHour": 1,
+              "endHour": 2,
+              "classroom": "FU101"
+            }
+          ]
+        },
+        {
+          "id": 1453,
+          "code": "1110501-A",
+          "teacher": "Ortega Sierra Alvaro",
+          "program": "111",
+          "maxCapacity": 40,
+          "availableCapacity": 25,
+          "sessions": [
+            {
+              "id": 41647,
+              "day": 0,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "SC104"
+            },
+            {
+              "id": 41648,
+              "day": 0,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SD101"
+            }
+          ]
+        },
+        {
+          "id": 1454,
+          "code": "1110501-B",
+          "teacher": "Luna Pereira Jose Ivan",
+          "program": "111",
+          "maxCapacity": 40,
+          "availableCapacity": 1,
+          "sessions": [
+            {
+              "id": 41649,
+              "day": 0,
+              "beginHour": 1,
+              "endHour": 2,
+              "classroom": "AO203"
+            },
+            {
+              "id": 41650,
+              "day": 3,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "AO201"
+            }
+          ]
+        },
+        {
+          "id": 1455,
+          "code": "1160060-A",
+          "teacher": "Garcia Martinez Ruth Stella",
+          "program": "116",
+          "maxCapacity": 20,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41651,
+              "day": 3,
+              "beginHour": 0,
+              "endHour": 1,
+              "classroom": "AG105"
+            },
+            {
+              "id": 41652,
+              "day": 4,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SB202"
+            }
+          ]
+        },
+        {
+          "id": 1456,
+          "code": "1160060-B",
+          "teacher": "Uscategui Blanco Mildren Yaneth",
+          "program": "116",
+          "maxCapacity": 15,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41653,
+              "day": 4,
+              "beginHour": 1,
+              "endHour": 2,
+              "classroom": "AG105"
+            },
+            {
+              "id": 41654,
+              "day": 4,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SB201"
+            }
+          ]
+        },
+        {
+          "id": 1457,
+          "code": "1160060-C",
+          "teacher": "Uscategui Blanco Mildren Yaneth",
+          "program": "116",
+          "maxCapacity": 15,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41655,
+              "day": 4,
+              "beginHour": 0,
+              "endHour": 1,
+              "classroom": "AG105"
+            },
+            {
+              "id": 41656,
+              "day": 4,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SB201"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1134,
+      "code": "1155202",
+      "name": "Algebra lineal",
+      "credits": 3,
+      "semester": 2,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1238,
+          "name": "Calculo diferencial",
+          "code": "1155101"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1835,
+          "code": "1110203-A",
+          "teacher": "Mariño Luis Fernando",
+          "program": "111",
+          "maxCapacity": 45,
+          "availableCapacity": 3,
+          "sessions": [
+            {
+              "id": 41369,
+              "day": 1,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "FU101"
+            },
+            {
+              "id": 41370,
+              "day": 4,
+              "beginHour": 4,
+              "endHour": 5,
+              "classroom": "SD101"
+            }
+          ]
+        },
+        {
+          "id": 1836,
+          "code": "1110203-B",
+          "teacher": "Niño Nieto Jesus Maria",
+          "program": "111",
+          "maxCapacity": 35,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41371,
+              "day": 1,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SD101"
+            },
+            {
+              "id": 41372,
+              "day": 3,
+              "beginHour": 3,
+              "endHour": 4,
+              "classroom": "SE102"
+            }
+          ]
+        },
+        {
+          "id": 1837,
+          "code": "1154202-A",
+          "teacher": "Mariño Luis Fernando",
+          "program": "115",
+          "maxCapacity": 35,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41373,
+              "day": 3,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "FU102"
+            },
+            {
+              "id": 41374,
+              "day": 4,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "SC104"
+            }
+          ]
+        },
+        {
+          "id": 1838,
+          "code": "1154202-B",
+          "teacher": "Cely Niño Jairo Wilgberto",
+          "program": "115",
+          "maxCapacity": 20,
+          "availableCapacity": 1,
+          "sessions": [
+            {
+              "id": 41375,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SA203"
+            },
+            {
+              "id": 41376,
+              "day": 4,
+              "beginHour": 4,
+              "endHour": 5,
+              "classroom": "SA211"
+            }
+          ]
+        },
+        {
+          "id": 1839,
+          "code": "1160011-A",
+          "teacher": "Niño Nieto Jesus Maria",
+          "program": "116",
+          "maxCapacity": 40,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41377,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "SD101"
+            },
+            {
+              "id": 41378,
+              "day": 2,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "FU101"
+            }
+          ]
+        },
+        {
+          "id": 1840,
+          "code": "1160011-B",
+          "teacher": "Ramos Martinez Kevin Steward",
+          "program": "116",
+          "maxCapacity": 40,
+          "availableCapacity": 16,
+          "sessions": [
+            {
+              "id": 41379,
+              "day": 1,
+              "beginHour": 10,
+              "endHour": 12,
+              "classroom": "SP207"
+            },
+            {
+              "id": 41380,
+              "day": 3,
+              "beginHour": 9,
+              "endHour": 10,
+              "classroom": "FU207"
+            }
+          ]
+        },
+        {
+          "id": 1841,
+          "code": "1191202-A",
+          "teacher": "Quintero Acosta Miguel Angel",
+          "program": "119",
+          "maxCapacity": 50,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41381,
+              "day": 0,
+              "beginHour": 1,
+              "endHour": 2,
+              "classroom": "AG206"
+            },
+            {
+              "id": 41382,
+              "day": 4,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "AG205"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1135,
+      "code": "1155203",
+      "name": "Fisica mecanica",
+      "credits": 4,
+      "semester": 2,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1238,
+          "name": "Calculo diferencial",
+          "code": "1155101"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1843,
+          "code": "1110202-A",
+          "teacher": "Rico Patiño Jessica Lorena",
+          "program": "111",
+          "maxCapacity": 14,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41383,
+              "day": 0,
+              "beginHour": 9,
+              "endHour": 10,
+              "classroom": "LBF01"
+            },
+            {
+              "id": 41384,
+              "day": 2,
+              "beginHour": 10,
+              "endHour": 11,
+              "classroom": "AO402"
+            },
+            {
+              "id": 41385,
+              "day": 4,
+              "beginHour": 10,
+              "endHour": 12,
+              "classroom": "SA204"
+            }
+          ]
+        },
+        {
+          "id": 1844,
+          "code": "1110202-B",
+          "teacher": "Fabra Araque Jose Miguel",
+          "program": "111",
+          "maxCapacity": 14,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41386,
+              "day": 0,
+              "beginHour": 10,
+              "endHour": 11,
+              "classroom": "LBF01"
+            },
+            {
+              "id": 41387,
+              "day": 2,
+              "beginHour": 10,
+              "endHour": 11,
+              "classroom": "AO402"
+            },
+            {
+              "id": 41388,
+              "day": 4,
+              "beginHour": 10,
+              "endHour": 12,
+              "classroom": "SA204"
+            }
+          ]
+        },
+        {
+          "id": 1845,
+          "code": "1110202-C",
+          "teacher": "Mejia Pallares Javier Alberto",
+          "program": "111",
+          "maxCapacity": 14,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41389,
+              "day": 2,
+              "beginHour": 10,
+              "endHour": 11,
+              "classroom": "AO402"
+            },
+            {
+              "id": 41390,
+              "day": 3,
+              "beginHour": 11,
+              "endHour": 12,
+              "classroom": "LBF03"
+            },
+            {
+              "id": 41391,
+              "day": 4,
+              "beginHour": 10,
+              "endHour": 12,
+              "classroom": "SA204"
+            }
+          ]
+        },
+        {
+          "id": 1846,
+          "code": "1110202-D",
+          "teacher": "Romero Becerra Ana Ludia",
+          "program": "111",
+          "maxCapacity": 14,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41392,
+              "day": 1,
+              "beginHour": 0,
+              "endHour": 1,
+              "classroom": "AO402"
+            },
+            {
+              "id": 41393,
+              "day": 3,
+              "beginHour": 10,
+              "endHour": 11,
+              "classroom": "LBF03"
+            },
+            {
+              "id": 41394,
+              "day": 3,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "AO302"
+            }
+          ]
+        },
+        {
+          "id": 1847,
+          "code": "1110202-E",
+          "teacher": "Jabba Castañeda German Adolfo",
+          "program": "111",
+          "maxCapacity": 14,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41395,
+              "day": 1,
+              "beginHour": 0,
+              "endHour": 1,
+              "classroom": "AO402"
+            },
+            {
+              "id": 41396,
+              "day": 3,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "AO302"
+            },
+            {
+              "id": 41397,
+              "day": 4,
+              "beginHour": 0,
+              "endHour": 1,
+              "classroom": "LBF03"
+            }
+          ]
+        },
+        {
+          "id": 1848,
+          "code": "1110202-F",
+          "teacher": "Nieto Contreras Jose Francisco",
+          "program": "111",
+          "maxCapacity": 14,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41398,
+              "day": 1,
+              "beginHour": 0,
+              "endHour": 1,
+              "classroom": "AO402"
+            },
+            {
+              "id": 41399,
+              "day": 3,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "AO302"
+            },
+            {
+              "id": 41400,
+              "day": 4,
+              "beginHour": 1,
+              "endHour": 2,
+              "classroom": "LBF03"
+            }
+          ]
+        },
+        {
+          "id": 1849,
+          "code": "1110202-G",
+          "teacher": "Nieto Contreras Jose Francisco",
+          "program": "111",
+          "maxCapacity": 14,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41401,
+              "day": 0,
+              "beginHour": 12,
+              "endHour": 14,
+              "classroom": "AO401"
+            },
+            {
+              "id": 41402,
+              "day": 1,
+              "beginHour": 1,
+              "endHour": 2,
+              "classroom": "LBF01"
+            },
+            {
+              "id": 41403,
+              "day": 2,
+              "beginHour": 10,
+              "endHour": 11,
+              "classroom": "AO204"
+            }
+          ]
+        },
+        {
+          "id": 1850,
+          "code": "1110202-H",
+          "teacher": "Serrano Contreras Johan Manuel",
+          "program": "111",
+          "maxCapacity": 14,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41404,
+              "day": 0,
+              "beginHour": 12,
+              "endHour": 14,
+              "classroom": "AO401"
+            },
+            {
+              "id": 41405,
+              "day": 2,
+              "beginHour": 0,
+              "endHour": 1,
+              "classroom": "LBF01"
+            },
+            {
+              "id": 41406,
+              "day": 2,
+              "beginHour": 10,
+              "endHour": 11,
+              "classroom": "AO204"
+            }
+          ]
+        },
+        {
+          "id": 1851,
+          "code": "1110202-I",
+          "teacher": "Fabra Araque Jose Miguel",
+          "program": "111",
+          "maxCapacity": 14,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41407,
+              "day": 0,
+              "beginHour": 8,
+              "endHour": 9,
+              "classroom": "LBF01"
+            },
+            {
+              "id": 41408,
+              "day": 0,
+              "beginHour": 12,
+              "endHour": 14,
+              "classroom": "AO401"
+            },
+            {
+              "id": 41409,
+              "day": 2,
+              "beginHour": 10,
+              "endHour": 11,
+              "classroom": "AO204"
+            }
+          ]
+        },
+        {
+          "id": 1852,
+          "code": "1110202-J",
+          "teacher": "Molina Salazar David Leonardo",
+          "program": "111",
+          "maxCapacity": 14,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41410,
+              "day": 1,
+              "beginHour": 0,
+              "endHour": 1,
+              "classroom": "SC201"
+            },
+            {
+              "id": 41411,
+              "day": 3,
+              "beginHour": 8,
+              "endHour": 9,
+              "classroom": "LBF03"
+            },
+            {
+              "id": 41412,
+              "day": 4,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "AO306"
+            }
+          ]
+        },
+        {
+          "id": 1853,
+          "code": "1110202-K",
+          "teacher": "Castaño Carrillo Jesus David",
+          "program": "111",
+          "maxCapacity": 14,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41413,
+              "day": 1,
+              "beginHour": 0,
+              "endHour": 1,
+              "classroom": "SC201"
+            },
+            {
+              "id": 41414,
+              "day": 3,
+              "beginHour": 9,
+              "endHour": 10,
+              "classroom": "LBF02"
+            },
+            {
+              "id": 41415,
+              "day": 4,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "AO306"
+            }
+          ]
+        },
+        {
+          "id": 1854,
+          "code": "1110202-L",
+          "teacher": "Mejia Pallares Javier Alberto",
+          "program": "111",
+          "maxCapacity": 14,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41416,
+              "day": 0,
+              "beginHour": 9,
+              "endHour": 10,
+              "classroom": "AO401"
+            },
+            {
+              "id": 41417,
+              "day": 2,
+              "beginHour": 9,
+              "endHour": 10,
+              "classroom": "LBF03"
+            },
+            {
+              "id": 41418,
+              "day": 4,
+              "beginHour": 8,
+              "endHour": 10,
+              "classroom": "AO402"
+            }
+          ]
+        },
+        {
+          "id": 1855,
+          "code": "1110202-M",
+          "teacher": "Mejia Pallares Javier Alberto",
+          "program": "111",
+          "maxCapacity": 14,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41419,
+              "day": 0,
+              "beginHour": 9,
+              "endHour": 10,
+              "classroom": "AO401"
+            },
+            {
+              "id": 41420,
+              "day": 2,
+              "beginHour": 8,
+              "endHour": 9,
+              "classroom": "LBF03"
+            },
+            {
+              "id": 41421,
+              "day": 4,
+              "beginHour": 8,
+              "endHour": 10,
+              "classroom": "AO402"
+            }
+          ]
+        },
+        {
+          "id": 1856,
+          "code": "1110202-N",
+          "teacher": "Mejia Pallares Javier Alberto",
+          "program": "111",
+          "maxCapacity": 14,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41422,
+              "day": 0,
+              "beginHour": 9,
+              "endHour": 10,
+              "classroom": "AO401"
+            },
+            {
+              "id": 41423,
+              "day": 0,
+              "beginHour": 10,
+              "endHour": 11,
+              "classroom": "LBF03"
+            },
+            {
+              "id": 41424,
+              "day": 4,
+              "beginHour": 8,
+              "endHour": 10,
+              "classroom": "AO402"
+            }
+          ]
+        },
+        {
+          "id": 1857,
+          "code": "1154203-A",
+          "teacher": "Mendoza Reyes Cecilio",
+          "program": "115",
+          "maxCapacity": 15,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41425,
+              "day": 3,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SA204"
+            },
+            {
+              "id": 41426,
+              "day": 4,
+              "beginHour": 4,
+              "endHour": 5,
+              "classroom": "SA205"
+            },
+            {
+              "id": 41427,
+              "day": 4,
+              "beginHour": 5,
+              "endHour": 6,
+              "classroom": "LBF01"
+            }
+          ]
+        },
+        {
+          "id": 1858,
+          "code": "1154203-B",
+          "teacher": "Mendoza Reyes Cecilio",
+          "program": "115",
+          "maxCapacity": 15,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41428,
+              "day": 3,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SA204"
+            },
+            {
+              "id": 41429,
+              "day": 4,
+              "beginHour": 1,
+              "endHour": 2,
+              "classroom": "LBF02"
+            },
+            {
+              "id": 41430,
+              "day": 4,
+              "beginHour": 4,
+              "endHour": 5,
+              "classroom": "SA205"
+            }
+          ]
+        },
+        {
+          "id": 1859,
+          "code": "1154203-C",
+          "teacher": "Mendoza Reyes Cecilio",
+          "program": "115",
+          "maxCapacity": 15,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41431,
+              "day": 2,
+              "beginHour": 3,
+              "endHour": 4,
+              "classroom": "LBF02"
+            },
+            {
+              "id": 41432,
+              "day": 3,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SA204"
+            },
+            {
+              "id": 41433,
+              "day": 4,
+              "beginHour": 4,
+              "endHour": 5,
+              "classroom": "SA205"
+            }
+          ]
+        },
+        {
+          "id": 1860,
+          "code": "1160021-A",
+          "teacher": "Useche Arciniegas Victor Julio",
+          "program": "116",
+          "maxCapacity": 13,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41434,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "SA202"
+            },
+            {
+              "id": 41435,
+              "day": 3,
+              "beginHour": 8,
+              "endHour": 10,
+              "classroom": "SA202"
+            },
+            {
+              "id": 41436,
+              "day": 3,
+              "beginHour": 10,
+              "endHour": 11,
+              "classroom": "LBF01"
+            }
+          ]
+        },
+        {
+          "id": 1861,
+          "code": "1160021-B",
+          "teacher": "Useche Arciniegas Victor Julio",
+          "program": "116",
+          "maxCapacity": 12,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41437,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "SA202"
+            },
+            {
+              "id": 41438,
+              "day": 3,
+              "beginHour": 8,
+              "endHour": 10,
+              "classroom": "SA202"
+            },
+            {
+              "id": 41439,
+              "day": 4,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "LBF01"
+            }
+          ]
+        },
+        {
+          "id": 1862,
+          "code": "1160021-C",
+          "teacher": "Useche Arciniegas Victor Julio",
+          "program": "116",
+          "maxCapacity": 12,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41440,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "SA202"
+            },
+            {
+              "id": 41441,
+              "day": 3,
+              "beginHour": 8,
+              "endHour": 10,
+              "classroom": "SA202"
+            },
+            {
+              "id": 41442,
+              "day": 4,
+              "beginHour": 3,
+              "endHour": 4,
+              "classroom": "LBF01"
+            }
+          ]
+        },
+        {
+          "id": 1863,
+          "code": "1160021-D",
+          "teacher": "Mancilla Rodriguez Juan David",
+          "program": "116",
+          "maxCapacity": 12,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41443,
+              "day": 0,
+              "beginHour": 8,
+              "endHour": 9,
+              "classroom": "LBF03"
+            },
+            {
+              "id": 41444,
+              "day": 0,
+              "beginHour": 9,
+              "endHour": 10,
+              "classroom": "AG204"
+            },
+            {
+              "id": 41445,
+              "day": 4,
+              "beginHour": 8,
+              "endHour": 10,
+              "classroom": "SC203"
+            }
+          ]
+        },
+        {
+          "id": 1864,
+          "code": "1191205-A",
+          "teacher": "Nieto Contreras Jose Francisco",
+          "program": "119",
+          "maxCapacity": 16,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41458,
+              "day": 0,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SA203"
+            },
+            {
+              "id": 41459,
+              "day": 3,
+              "beginHour": 8,
+              "endHour": 9,
+              "classroom": "AG303"
+            },
+            {
+              "id": 41460,
+              "day": 3,
+              "beginHour": 10,
+              "endHour": 11,
+              "classroom": "LBF02"
+            }
+          ]
+        },
+        {
+          "id": 1865,
+          "code": "1191205-B",
+          "teacher": "Nieto Contreras Jose Francisco",
+          "program": "119",
+          "maxCapacity": 16,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41461,
+              "day": 0,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SA203"
+            },
+            {
+              "id": 41462,
+              "day": 0,
+              "beginHour": 5,
+              "endHour": 6,
+              "classroom": "LBF02"
+            },
+            {
+              "id": 41463,
+              "day": 3,
+              "beginHour": 8,
+              "endHour": 9,
+              "classroom": "AG303"
+            }
+          ]
+        },
+        {
+          "id": 1866,
+          "code": "1191205-C",
+          "teacher": "Molina Salazar David Leonardo",
+          "program": "119",
+          "maxCapacity": 15,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41464,
+              "day": 0,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SA203"
+            },
+            {
+              "id": 41465,
+              "day": 3,
+              "beginHour": 9,
+              "endHour": 10,
+              "classroom": "LBF01"
+            },
+            {
+              "id": 41466,
+              "day": 3,
+              "beginHour": 8,
+              "endHour": 9,
+              "classroom": "AG303"
+            }
+          ]
+        },
+        {
+          "id": 1867,
+          "code": "1191205-D",
+          "teacher": "Espinel Omaña Jorge Willian",
+          "program": "119",
+          "maxCapacity": 16,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41467,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "SG207"
+            },
+            {
+              "id": 41468,
+              "day": 2,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "LBF03"
+            },
+            {
+              "id": 41469,
+              "day": 3,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SG406"
+            }
+          ]
+        },
+        {
+          "id": 1868,
+          "code": "1191205-E",
+          "teacher": "Molina Salazar David Leonardo",
+          "program": "119",
+          "maxCapacity": 16,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41470,
+              "day": 1,
+              "beginHour": 3,
+              "endHour": 4,
+              "classroom": "LBF02"
+            },
+            {
+              "id": 41471,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "SG207"
+            },
+            {
+              "id": 41472,
+              "day": 3,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SG406"
+            }
+          ]
+        },
+        {
+          "id": 1869,
+          "code": "1191205-F",
+          "teacher": "Castaño Carrillo Jesus David",
+          "program": "119",
+          "maxCapacity": 15,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41473,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "SG207"
+            },
+            {
+              "id": 41474,
+              "day": 3,
+              "beginHour": 3,
+              "endHour": 4,
+              "classroom": "LBF01"
+            },
+            {
+              "id": 41475,
+              "day": 3,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SG406"
+            }
+          ]
+        },
+        {
+          "id": 1938,
+          "code": "1180253-A",
+          "teacher": "Serrano Contreras Johan Manuel",
+          "program": "118",
+          "maxCapacity": 15,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41446,
+              "day": 2,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "LBF02"
+            },
+            {
+              "id": 41447,
+              "day": 2,
+              "beginHour": 3,
+              "endHour": 4,
+              "classroom": "AO401"
+            },
+            {
+              "id": 41448,
+              "day": 3,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "AO205"
+            }
+          ]
+        },
+        {
+          "id": 1939,
+          "code": "1180253-B",
+          "teacher": "Castaño Carrillo Jesus David",
+          "program": "118",
+          "maxCapacity": 15,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41449,
+              "day": 1,
+              "beginHour": 1,
+              "endHour": 2,
+              "classroom": "LBF02"
+            },
+            {
+              "id": 41450,
+              "day": 2,
+              "beginHour": 3,
+              "endHour": 4,
+              "classroom": "AO401"
+            },
+            {
+              "id": 41451,
+              "day": 3,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "AO205"
+            }
+          ]
+        },
+        {
+          "id": 1940,
+          "code": "1180253-C",
+          "teacher": "Solarte Mompotes Jhon Jairo",
+          "program": "118",
+          "maxCapacity": 15,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41452,
+              "day": 3,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "AO301"
+            },
+            {
+              "id": 41453,
+              "day": 4,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "LBF03"
+            },
+            {
+              "id": 41454,
+              "day": 4,
+              "beginHour": 3,
+              "endHour": 4,
+              "classroom": "AO401"
+            }
+          ]
+        },
+        {
+          "id": 1941,
+          "code": "1180253-D",
+          "teacher": "Garcia Gomez Freddy Jesus",
+          "program": "118",
+          "maxCapacity": 15,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41455,
+              "day": 3,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "AO301"
+            },
+            {
+              "id": 41456,
+              "day": 4,
+              "beginHour": 3,
+              "endHour": 4,
+              "classroom": "AO401"
+            },
+            {
+              "id": 41457,
+              "day": 4,
+              "beginHour": 0,
+              "endHour": 1,
+              "classroom": "LBF02"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1136,
+      "code": "1155303",
+      "name": "Fisica electromagnetica",
+      "credits": 4,
+      "semester": 3,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1135,
+          "name": "Fisica mecanica",
+          "code": "1155203"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1885,
+          "code": "1110302-A",
+          "teacher": "Solarte Mompotes Jhon Jairo",
+          "program": "111",
+          "maxCapacity": 14,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41509,
+              "day": 0,
+              "beginHour": 0,
+              "endHour": 1,
+              "classroom": "AO201"
+            },
+            {
+              "id": 41510,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "AO202"
+            },
+            {
+              "id": 41511,
+              "day": 2,
+              "beginHour": 4,
+              "endHour": 5,
+              "classroom": "LBF04"
+            }
+          ]
+        },
+        {
+          "id": 1886,
+          "code": "1110302-B",
+          "teacher": "Nieto Contreras Jose Francisco",
+          "program": "111",
+          "maxCapacity": 14,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41512,
+              "day": 0,
+              "beginHour": 0,
+              "endHour": 1,
+              "classroom": "AO201"
+            },
+            {
+              "id": 41513,
+              "day": 0,
+              "beginHour": 4,
+              "endHour": 5,
+              "classroom": "LBF04"
+            },
+            {
+              "id": 41514,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "AO202"
+            }
+          ]
+        },
+        {
+          "id": 1887,
+          "code": "1110302-C",
+          "teacher": "Solarte Mompotes Jhon Jairo",
+          "program": "111",
+          "maxCapacity": 14,
+          "availableCapacity": 2,
+          "sessions": [
+            {
+              "id": 41515,
+              "day": 0,
+              "beginHour": 0,
+              "endHour": 1,
+              "classroom": "AO201"
+            },
+            {
+              "id": 41516,
+              "day": 0,
+              "beginHour": 5,
+              "endHour": 6,
+              "classroom": "LBF05"
+            },
+            {
+              "id": 41517,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "AO202"
+            }
+          ]
+        },
+        {
+          "id": 1888,
+          "code": "1110302-D",
+          "teacher": "Garcia Gomez Freddy Jesus",
+          "program": "111",
+          "maxCapacity": 14,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41518,
+              "day": 1,
+              "beginHour": 0,
+              "endHour": 1,
+              "classroom": "LBF05"
+            },
+            {
+              "id": 41519,
+              "day": 2,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SG207"
+            },
+            {
+              "id": 41520,
+              "day": 4,
+              "beginHour": 11,
+              "endHour": 12,
+              "classroom": "AO401"
+            }
+          ]
+        },
+        {
+          "id": 1889,
+          "code": "1110302-E",
+          "teacher": "Serrano Contreras Johan Manuel",
+          "program": "111",
+          "maxCapacity": 14,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41521,
+              "day": 2,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SG207"
+            },
+            {
+              "id": 41522,
+              "day": 2,
+              "beginHour": 10,
+              "endHour": 11,
+              "classroom": "LBF05"
+            },
+            {
+              "id": 41523,
+              "day": 4,
+              "beginHour": 11,
+              "endHour": 12,
+              "classroom": "AO401"
+            }
+          ]
+        },
+        {
+          "id": 1890,
+          "code": "1110302-F",
+          "teacher": "Fabra Araque Jose Miguel",
+          "program": "111",
+          "maxCapacity": 14,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41524,
+              "day": 0,
+              "beginHour": 11,
+              "endHour": 12,
+              "classroom": "LBF05"
+            },
+            {
+              "id": 41525,
+              "day": 2,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SG207"
+            },
+            {
+              "id": 41526,
+              "day": 4,
+              "beginHour": 11,
+              "endHour": 12,
+              "classroom": "AO401"
+            }
+          ]
+        },
+        {
+          "id": 1891,
+          "code": "1110302-G",
+          "teacher": "Prato Lara Alberto Camilo",
+          "program": "111",
+          "maxCapacity": 14,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41527,
+              "day": 0,
+              "beginHour": 0,
+              "endHour": 1,
+              "classroom": "AO205"
+            },
+            {
+              "id": 41528,
+              "day": 0,
+              "beginHour": 8,
+              "endHour": 9,
+              "classroom": "LBF04"
+            },
+            {
+              "id": 41529,
+              "day": 3,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "AO401"
+            }
+          ]
+        },
+        {
+          "id": 1892,
+          "code": "1110302-H",
+          "teacher": "Ruiz Miranda Fabian Humberto",
+          "program": "111",
+          "maxCapacity": 14,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41530,
+              "day": 0,
+              "beginHour": 0,
+              "endHour": 1,
+              "classroom": "LBF04"
+            },
+            {
+              "id": 41531,
+              "day": 0,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "AO303"
+            },
+            {
+              "id": 41532,
+              "day": 4,
+              "beginHour": 10,
+              "endHour": 11,
+              "classroom": "AO304"
+            }
+          ]
+        },
+        {
+          "id": 1893,
+          "code": "1110302-I",
+          "teacher": "Cely Cely Marco Fernando",
+          "program": "111",
+          "maxCapacity": 14,
+          "availableCapacity": 8,
+          "sessions": [
+            {
+              "id": 41533,
+              "day": 0,
+              "beginHour": 0,
+              "endHour": 1,
+              "classroom": "AO205"
+            },
+            {
+              "id": 41534,
+              "day": 1,
+              "beginHour": 4,
+              "endHour": 5,
+              "classroom": "LBF04"
+            },
+            {
+              "id": 41535,
+              "day": 3,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "AO401"
+            }
+          ]
+        },
+        {
+          "id": 1894,
+          "code": "1110302-J",
+          "teacher": "Serrano Contreras Johan Manuel",
+          "program": "111",
+          "maxCapacity": 14,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41536,
+              "day": 0,
+              "beginHour": 0,
+              "endHour": 1,
+              "classroom": "AO205"
+            },
+            {
+              "id": 41537,
+              "day": 2,
+              "beginHour": 1,
+              "endHour": 2,
+              "classroom": "LBF04"
+            },
+            {
+              "id": 41538,
+              "day": 3,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "AO401"
+            }
+          ]
+        },
+        {
+          "id": 1895,
+          "code": "1110302-K",
+          "teacher": "Jabba Castañeda German Adolfo",
+          "program": "111",
+          "maxCapacity": 14,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41539,
+              "day": 0,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "AO303"
+            },
+            {
+              "id": 41540,
+              "day": 3,
+              "beginHour": 4,
+              "endHour": 5,
+              "classroom": "LBF04"
+            },
+            {
+              "id": 41541,
+              "day": 4,
+              "beginHour": 10,
+              "endHour": 11,
+              "classroom": "AO304"
+            }
+          ]
+        },
+        {
+          "id": 1896,
+          "code": "1110302-L",
+          "teacher": "Romero Becerra Ana Ludia",
+          "program": "111",
+          "maxCapacity": 14,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41542,
+              "day": 0,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "AO303"
+            },
+            {
+              "id": 41543,
+              "day": 0,
+              "beginHour": 5,
+              "endHour": 6,
+              "classroom": "LBF04"
+            },
+            {
+              "id": 41544,
+              "day": 4,
+              "beginHour": 10,
+              "endHour": 11,
+              "classroom": "AO304"
+            }
+          ]
+        },
+        {
+          "id": 1897,
+          "code": "1154303-A",
+          "teacher": "Mendoza Reyes Cecilio",
+          "program": "115",
+          "maxCapacity": 15,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41545,
+              "day": 0,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "AG304"
+            },
+            {
+              "id": 41546,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "AG405"
+            },
+            {
+              "id": 41547,
+              "day": 1,
+              "beginHour": 3,
+              "endHour": 4,
+              "classroom": "LBF04"
+            }
+          ]
+        },
+        {
+          "id": 1898,
+          "code": "1154303-B",
+          "teacher": "Mendoza Reyes Cecilio",
+          "program": "115",
+          "maxCapacity": 15,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41548,
+              "day": 0,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "AG402"
+            },
+            {
+              "id": 41549,
+              "day": 0,
+              "beginHour": 3,
+              "endHour": 4,
+              "classroom": "LBF04"
+            },
+            {
+              "id": 41550,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "AG402"
+            }
+          ]
+        },
+        {
+          "id": 1899,
+          "code": "1160031-A",
+          "teacher": "Cely Cely Marco Fernando",
+          "program": "116",
+          "maxCapacity": 12,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41554,
+              "day": 1,
+              "beginHour": 4,
+              "endHour": 5,
+              "classroom": "AG204"
+            },
+            {
+              "id": 41555,
+              "day": 1,
+              "beginHour": 5,
+              "endHour": 6,
+              "classroom": "LBF04"
+            },
+            {
+              "id": 41556,
+              "day": 4,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "AG204"
+            }
+          ]
+        },
+        {
+          "id": 1900,
+          "code": "1160031-B",
+          "teacher": "Castaño Carrillo Jesus David",
+          "program": "116",
+          "maxCapacity": 12,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41557,
+              "day": 1,
+              "beginHour": 3,
+              "endHour": 4,
+              "classroom": "LBF05"
+            },
+            {
+              "id": 41558,
+              "day": 1,
+              "beginHour": 4,
+              "endHour": 5,
+              "classroom": "AG204"
+            },
+            {
+              "id": 41559,
+              "day": 4,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "AG204"
+            }
+          ]
+        },
+        {
+          "id": 1901,
+          "code": "1160031-C",
+          "teacher": "Romero Becerra Ana Ludia",
+          "program": "116",
+          "maxCapacity": 12,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41560,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "LBF05"
+            },
+            {
+              "id": 41561,
+              "day": 1,
+              "beginHour": 4,
+              "endHour": 5,
+              "classroom": "AG204"
+            },
+            {
+              "id": 41562,
+              "day": 4,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "AG204"
+            }
+          ]
+        },
+        {
+          "id": 1902,
+          "code": "1160031-D",
+          "teacher": "Nieto Contreras Jose Francisco",
+          "program": "116",
+          "maxCapacity": 12,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41563,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "LBF04"
+            },
+            {
+              "id": 41564,
+              "day": 1,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SF203"
+            },
+            {
+              "id": 41565,
+              "day": 3,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "AG402"
+            }
+          ]
+        },
+        {
+          "id": 1903,
+          "code": "1160031-E",
+          "teacher": "Ferrer Pacheco Martha Yasmid",
+          "program": "116",
+          "maxCapacity": 12,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41566,
+              "day": 0,
+              "beginHour": 4,
+              "endHour": 5,
+              "classroom": "LBF05"
+            },
+            {
+              "id": 41567,
+              "day": 1,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SF203"
+            },
+            {
+              "id": 41568,
+              "day": 3,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "AG402"
+            }
+          ]
+        },
+        {
+          "id": 1904,
+          "code": "1160031-F",
+          "teacher": "Ferrer Pacheco Martha Yasmid",
+          "program": "116",
+          "maxCapacity": 12,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41569,
+              "day": 1,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SF203"
+            },
+            {
+              "id": 41570,
+              "day": 2,
+              "beginHour": 1,
+              "endHour": 2,
+              "classroom": "LBF05"
+            },
+            {
+              "id": 41571,
+              "day": 3,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "AG402"
+            }
+          ]
+        },
+        {
+          "id": 1905,
+          "code": "1191302-A",
+          "teacher": "Cely Cely Marco Fernando",
+          "program": "119",
+          "maxCapacity": 15,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41572,
+              "day": 3,
+              "beginHour": 3,
+              "endHour": 4,
+              "classroom": "LBF05"
+            },
+            {
+              "id": 41573,
+              "day": 3,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SP106"
+            },
+            {
+              "id": 41574,
+              "day": 4,
+              "beginHour": 10,
+              "endHour": 11,
+              "classroom": "FU101"
+            }
+          ]
+        },
+        {
+          "id": 1906,
+          "code": "1191302-B",
+          "teacher": "Ruiz Miranda Fabian Humberto",
+          "program": "119",
+          "maxCapacity": 15,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41575,
+              "day": 2,
+              "beginHour": 3,
+              "endHour": 4,
+              "classroom": "SE201"
+            },
+            {
+              "id": 41576,
+              "day": 2,
+              "beginHour": 4,
+              "endHour": 5,
+              "classroom": "LBF05"
+            },
+            {
+              "id": 41577,
+              "day": 3,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SP205"
+            }
+          ]
+        },
+        {
+          "id": 1907,
+          "code": "1191302-C",
+          "teacher": "Rodriguez Wilches Luis Francisco",
+          "program": "119",
+          "maxCapacity": 15,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41578,
+              "day": 1,
+              "beginHour": 10,
+              "endHour": 12,
+              "classroom": "FU303"
+            },
+            {
+              "id": 41579,
+              "day": 2,
+              "beginHour": 10,
+              "endHour": 11,
+              "classroom": "LBF04"
+            },
+            {
+              "id": 41580,
+              "day": 2,
+              "beginHour": 11,
+              "endHour": 12,
+              "classroom": "AG301"
+            }
+          ]
+        },
+        {
+          "id": 1908,
+          "code": "1191302-D",
+          "teacher": "Rodriguez Wilches Luis Francisco",
+          "program": "119",
+          "maxCapacity": 15,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41581,
+              "day": 2,
+              "beginHour": 9,
+              "endHour": 10,
+              "classroom": "LBF05"
+            },
+            {
+              "id": 41582,
+              "day": 3,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SP106"
+            },
+            {
+              "id": 41583,
+              "day": 4,
+              "beginHour": 10,
+              "endHour": 11,
+              "classroom": "FU101"
+            }
+          ]
+        },
+        {
+          "id": 1909,
+          "code": "1191302-E",
+          "teacher": "Romero Becerra Ana Ludia",
+          "program": "119",
+          "maxCapacity": 15,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41584,
+              "day": 2,
+              "beginHour": 3,
+              "endHour": 4,
+              "classroom": "SE201"
+            },
+            {
+              "id": 41585,
+              "day": 2,
+              "beginHour": 5,
+              "endHour": 6,
+              "classroom": "LBF04"
+            },
+            {
+              "id": 41586,
+              "day": 3,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SP205"
+            }
+          ]
+        },
+        {
+          "id": 1910,
+          "code": "1191302-F",
+          "teacher": "Fabra Araque Jose Miguel",
+          "program": "119",
+          "maxCapacity": 15,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41587,
+              "day": 1,
+              "beginHour": 10,
+              "endHour": 12,
+              "classroom": "FU303"
+            },
+            {
+              "id": 41588,
+              "day": 2,
+              "beginHour": 11,
+              "endHour": 12,
+              "classroom": "AG301"
+            },
+            {
+              "id": 41589,
+              "day": 3,
+              "beginHour": 10,
+              "endHour": 11,
+              "classroom": "LBF04"
+            }
+          ]
+        },
+        {
+          "id": 1935,
+          "code": "1154303-C",
+          "teacher": "Solarte Mompotes Jhon Jairo",
+          "program": "115",
+          "maxCapacity": 15,
+          "availableCapacity": 8,
+          "sessions": [
+            {
+              "id": 41551,
+              "day": 0,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "AG405"
+            },
+            {
+              "id": 41552,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "AG205"
+            },
+            {
+              "id": 41553,
+              "day": 1,
+              "beginHour": 4,
+              "endHour": 5,
+              "classroom": "LBF05"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1137,
+      "code": "1155403",
+      "name": "Ondas y particulas",
+      "credits": 3,
+      "semester": 4,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1136,
+          "name": "Fisica electromagnetica",
+          "code": "1155303"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1918,
+          "code": "1110402-A",
+          "teacher": "Romero Becerra Ana Ludia",
+          "program": "111",
+          "maxCapacity": 45,
+          "availableCapacity": 6,
+          "sessions": [
+            {
+              "id": 41613,
+              "day": 1,
+              "beginHour": 4,
+              "endHour": 5,
+              "classroom": "AO201"
+            },
+            {
+              "id": 41614,
+              "day": 3,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "AO402"
+            }
+          ]
+        },
+        {
+          "id": 1919,
+          "code": "1110402-B",
+          "teacher": "Cely Cely Marco Fernando",
+          "program": "111",
+          "maxCapacity": 45,
+          "availableCapacity": 23,
+          "sessions": [
+            {
+              "id": 41615,
+              "day": 2,
+              "beginHour": 1,
+              "endHour": 2,
+              "classroom": "AO401"
+            },
+            {
+              "id": 41616,
+              "day": 4,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "AO401"
+            }
+          ]
+        },
+        {
+          "id": 1921,
+          "code": "1160041-A",
+          "teacher": "Raba Paez Angela Mercedes",
+          "program": "116",
+          "maxCapacity": 40,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41627,
+              "day": 2,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "AG103"
+            },
+            {
+              "id": 41628,
+              "day": 4,
+              "beginHour": 4,
+              "endHour": 5,
+              "classroom": "AG103"
+            }
+          ]
+        },
+        {
+          "id": 1922,
+          "code": "1191402-A",
+          "teacher": "Peña Rodriguez Gabriel",
+          "program": "119",
+          "maxCapacity": 47,
+          "availableCapacity": 18,
+          "sessions": [
+            {
+              "id": 41629,
+              "day": 1,
+              "beginHour": 10,
+              "endHour": 11,
+              "classroom": "FU207"
+            },
+            {
+              "id": 41630,
+              "day": 3,
+              "beginHour": 10,
+              "endHour": 12,
+              "classroom": "SA206"
+            }
+          ]
+        },
+        {
+          "id": 1923,
+          "code": "1191402-B",
+          "teacher": "Peña Rodriguez Gabriel",
+          "program": "119",
+          "maxCapacity": 47,
+          "availableCapacity": 9,
+          "sessions": [
+            {
+              "id": 41631,
+              "day": 1,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SD202"
+            },
+            {
+              "id": 41632,
+              "day": 2,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "SP207"
+            }
+          ]
+        },
+        {
+          "id": 1936,
+          "code": "1154403-A",
+          "teacher": "Solarte Mompotes Jhon Jairo",
+          "program": "115",
+          "maxCapacity": 35,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41623,
+              "day": 2,
+              "beginHour": 3,
+              "endHour": 4,
+              "classroom": "SE103"
+            },
+            {
+              "id": 41624,
+              "day": 4,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SP205"
+            }
+          ]
+        },
+        {
+          "id": 1937,
+          "code": "1154403-B",
+          "teacher": "Espinel Omaña Jorge Willian",
+          "program": "115",
+          "maxCapacity": 35,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41625,
+              "day": 2,
+              "beginHour": 3,
+              "endHour": 4,
+              "classroom": "SA204"
+            },
+            {
+              "id": 41626,
+              "day": 4,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SA210"
+            }
+          ]
+        },
+        {
+          "id": 1946,
+          "code": "1110402-C",
+          "teacher": "Prato Lara Alberto Camilo",
+          "program": "111",
+          "maxCapacity": 1,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41617,
+              "day": 0,
+              "beginHour": 1,
+              "endHour": 4,
+              "classroom": "SC103"
+            },
+            {
+              "id": 41618,
+              "day": 1,
+              "beginHour": 1,
+              "endHour": 4,
+              "classroom": "SC103"
+            },
+            {
+              "id": 41619,
+              "day": 2,
+              "beginHour": 1,
+              "endHour": 4,
+              "classroom": "SC103"
+            },
+            {
+              "id": 41620,
+              "day": 3,
+              "beginHour": 1,
+              "endHour": 4,
+              "classroom": "SC103"
+            },
+            {
+              "id": 41621,
+              "day": 4,
+              "beginHour": 1,
+              "endHour": 4,
+              "classroom": "SC103"
+            },
+            {
+              "id": 41622,
+              "day": 5,
+              "beginHour": 1,
+              "endHour": 4,
+              "classroom": "SC103"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1138,
+      "code": "1155503",
+      "name": "Electronica",
+      "credits": 3,
+      "semester": 5,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1137,
+          "name": "Ondas y particulas",
+          "code": "1155403"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1468,
+          "code": "1155503-A",
+          "teacher": "Duque Suarez Maria Carolina",
+          "program": "115",
+          "maxCapacity": 15,
+          "availableCapacity": 1,
+          "sessions": [
+            {
+              "id": 41661,
+              "day": 0,
+              "beginHour": 10,
+              "endHour": 12,
+              "classroom": "LG108"
+            },
+            {
+              "id": 41662,
+              "day": 1,
+              "beginHour": 10,
+              "endHour": 12,
+              "classroom": "SE301"
+            }
+          ]
+        },
+        {
+          "id": 1469,
+          "code": "1155503-B",
+          "teacher": "Duque Suarez Maria Carolina",
+          "program": "115",
+          "maxCapacity": 15,
+          "availableCapacity": 2,
+          "sessions": [
+            {
+              "id": 41663,
+              "day": 1,
+              "beginHour": 10,
+              "endHour": 12,
+              "classroom": "SD203"
+            },
+            {
+              "id": 41664,
+              "day": 2,
+              "beginHour": 10,
+              "endHour": 12,
+              "classroom": "LG108"
+            }
+          ]
+        },
+        {
+          "id": 1470,
+          "code": "1155503-C",
+          "teacher": "Guzman Romo Ingrid Clariethe",
+          "program": "115",
+          "maxCapacity": 12,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41665,
+              "day": 1,
+              "beginHour": 8,
+              "endHour": 10,
+              "classroom": "LG108"
+            },
+            {
+              "id": 41666,
+              "day": 2,
+              "beginHour": 8,
+              "endHour": 10,
+              "classroom": "SE202"
+            }
+          ]
+        },
+        {
+          "id": 1471,
+          "code": "1155503-D",
+          "teacher": "Duque Suarez Maria Carolina",
+          "program": "115",
+          "maxCapacity": 12,
+          "availableCapacity": 10,
+          "sessions": [
+            {
+              "id": 41667,
+              "day": 2,
+              "beginHour": 8,
+              "endHour": 10,
+              "classroom": "TE000"
+            },
+            {
+              "id": 41668,
+              "day": 3,
+              "beginHour": 10,
+              "endHour": 12,
+              "classroom": "LG108"
+            }
+          ]
+        },
+        {
+          "id": 1472,
+          "code": "1155503-E",
+          "teacher": "Guzman Romo Ingrid Clariethe",
+          "program": "115",
+          "maxCapacity": 12,
+          "availableCapacity": 11,
+          "sessions": [
+            {
+              "id": 41669,
+              "day": 0,
+              "beginHour": 8,
+              "endHour": 10,
+              "classroom": "AG206"
+            },
+            {
+              "id": 41670,
+              "day": 3,
+              "beginHour": 8,
+              "endHour": 10,
+              "classroom": "LG110"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1140,
+      "code": "1155402",
+      "name": "Probabilidad y estadistica",
+      "credits": 3,
+      "semester": 4,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1239,
+          "name": "Matematicas discretas",
+          "code": "1155102"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1913,
+          "code": "1110403-A",
+          "teacher": "Cuellar De Fex Maria Patricia",
+          "program": "111",
+          "maxCapacity": 40,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41606,
+              "day": 0,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "SC104"
+            },
+            {
+              "id": 41607,
+              "day": 4,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "AO205"
+            }
+          ]
+        },
+        {
+          "id": 1914,
+          "code": "1110403-B",
+          "teacher": "Hernandez Rosa Virginia",
+          "program": "111",
+          "maxCapacity": 40,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41608,
+              "day": 1,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "AO301"
+            },
+            {
+              "id": 41609,
+              "day": 3,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "AO201"
+            }
+          ]
+        },
+        {
+          "id": 1915,
+          "code": "1160050-A",
+          "teacher": "Maduro Mendoza Ricardo Alfonso",
+          "program": "116",
+          "maxCapacity": 40,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41610,
+              "day": 0,
+              "beginHour": 10,
+              "endHour": 12,
+              "classroom": "AN401"
+            },
+            {
+              "id": 41611,
+              "day": 3,
+              "beginHour": 10,
+              "endHour": 11,
+              "classroom": "FU303"
+            }
+          ]
+        },
+        {
+          "id": 1916,
+          "code": "1191406-A",
+          "teacher": "Garcia Martinez Myriam Deisy",
+          "program": "119",
+          "maxCapacity": 47,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41612,
+              "day": 3,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SE203"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1141,
+      "code": "1155502",
+      "name": "Investigacion de operaciones",
+      "credits": 3,
+      "semester": 5,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1140,
+          "name": "Probabilidad y estadistica",
+          "code": "1155402"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1480,
+          "code": "1191605-A",
+          "teacher": "Palacios Alvarado Wlamyr",
+          "program": "119",
+          "maxCapacity": 30,
+          "availableCapacity": 3,
+          "sessions": [
+            {
+              "id": 41657,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "FU210"
+            },
+            {
+              "id": 41658,
+              "day": 3,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SC204"
+            }
+          ]
+        },
+        {
+          "id": 1481,
+          "code": "1191605-B",
+          "teacher": "Palacios Alvarado Wlamyr",
+          "program": "119",
+          "maxCapacity": 10,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41659,
+              "day": 0,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SP207"
+            },
+            {
+              "id": 41660,
+              "day": 3,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "FU210"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1143,
+      "code": "1155204",
+      "name": "Programacion orientada a objetos",
+      "credits": 3,
+      "semester": 2,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1240,
+          "name": "Fundamentos de programacion",
+          "code": "1155104"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": 1144,
+      "code": "1155304",
+      "name": "Estructuras de datos",
+      "credits": 3,
+      "semester": 3,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1143,
+          "name": "Programacion orientada a objetos",
+          "code": "1155204"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1911,
+          "code": "1154304-A",
+          "teacher": "Adarme Jaimes Marco Antonio",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41590,
+              "day": 2,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SA401"
+            },
+            {
+              "id": 41591,
+              "day": 4,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SA401"
+            }
+          ]
+        },
+        {
+          "id": 1912,
+          "code": "1154304-B",
+          "teacher": "Perez Gutierrez Boris Rainiero",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41592,
+              "day": 2,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SA402"
+            },
+            {
+              "id": 41593,
+              "day": 4,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SC401"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1145,
+      "code": "1155404",
+      "name": "Analisis de algoritmos",
+      "credits": 3,
+      "semester": 4,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1144,
+          "name": "Estructuras de datos",
+          "code": "1155304"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1947,
+          "code": "1155404-C",
+          "teacher": "Adarme Jaimes Marco Antonio",
+          "program": "115",
+          "maxCapacity": 25,
+          "availableCapacity": 8,
+          "sessions": [
+            {
+              "id": 41633,
+              "day": 0,
+              "beginHour": 1,
+              "endHour": 4,
+              "classroom": "SC203"
+            },
+            {
+              "id": 41634,
+              "day": 1,
+              "beginHour": 1,
+              "endHour": 4,
+              "classroom": "SC203"
+            },
+            {
+              "id": 41635,
+              "day": 2,
+              "beginHour": 1,
+              "endHour": 4,
+              "classroom": "SC203"
+            },
+            {
+              "id": 41636,
+              "day": 3,
+              "beginHour": 1,
+              "endHour": 4,
+              "classroom": "SC203"
+            },
+            {
+              "id": 41637,
+              "day": 4,
+              "beginHour": 1,
+              "endHour": 4,
+              "classroom": "SC203"
+            },
+            {
+              "id": 41638,
+              "day": 5,
+              "beginHour": 1,
+              "endHour": 4,
+              "classroom": "SC203"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1146,
+      "code": "1155616",
+      "name": "Aplicaciones prÁcticas de teoria de grafos",
+      "credits": 3,
+      "semester": 6,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1145,
+          "name": "Analisis de algoritmos",
+          "code": "1155404"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1485,
+          "code": "1155616-A",
+          "teacher": "Fuentes Camargo Jairo Alberto",
+          "program": "115",
+          "maxCapacity": 20,
+          "availableCapacity": 18,
+          "sessions": [
+            {
+              "id": 41712,
+              "day": 0,
+              "beginHour": 4,
+              "endHour": 7,
+              "classroom": "SB403"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1147,
+      "code": "1156704",
+      "name": "Teoria de grafos",
+      "credits": 3,
+      "semester": 7,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1145,
+          "name": "Analisis de algoritmos",
+          "code": "1155404"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": 1148,
+      "code": "1155405",
+      "name": "Teoria de la computacion",
+      "credits": 3,
+      "semester": 4,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1144,
+          "name": "Estructuras de datos",
+          "code": "1155304"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1944,
+          "code": "1154406-A",
+          "teacher": "Puerto Cuadros Eduard Gilberto",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41639,
+              "day": 0,
+              "beginHour": 3,
+              "endHour": 4,
+              "classroom": "SA404"
+            },
+            {
+              "id": 41640,
+              "day": 0,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SA404"
+            }
+          ]
+        },
+        {
+          "id": 1949,
+          "code": "1154406-B",
+          "teacher": "-",
+          "program": "115",
+          "maxCapacity": 35,
+          "availableCapacity": 27,
+          "sessions": [
+            {
+              "id": 41641,
+              "day": 0,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "SA402"
+            },
+            {
+              "id": 41642,
+              "day": 1,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SA310"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1149,
+      "code": "1155504",
+      "name": "Arquitectura de computadores",
+      "credits": 3,
+      "semester": 5,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1144,
+          "name": "Estructuras de datos",
+          "code": "1155304"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1489,
+          "code": "1155504-A",
+          "teacher": "Robles Angarita Miguel Fabian",
+          "program": "115",
+          "maxCapacity": 35,
+          "availableCapacity": 2,
+          "sessions": [
+            {
+              "id": 41671,
+              "day": 2,
+              "beginHour": 1,
+              "endHour": 2,
+              "classroom": "SB404"
+            },
+            {
+              "id": 41672,
+              "day": 4,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "SB404"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1150,
+      "code": "1155604",
+      "name": "Sistemas operativos",
+      "credits": 3,
+      "semester": 6,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1149,
+          "name": "Arquitectura de computadores",
+          "code": "1155504"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1492,
+          "code": "1155604-A",
+          "teacher": "Adarme Jaimes Marco Antonio",
+          "program": "115",
+          "maxCapacity": 35,
+          "availableCapacity": 6,
+          "sessions": [
+            {
+              "id": 41682,
+              "day": 1,
+              "beginHour": 4,
+              "endHour": 5,
+              "classroom": "SA401"
+            },
+            {
+              "id": 41683,
+              "day": 3,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SA401"
+            }
+          ]
+        },
+        {
+          "id": 1493,
+          "code": "1155604-B",
+          "teacher": "Robles Angarita Miguel Fabian",
+          "program": "115",
+          "maxCapacity": 35,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41684,
+              "day": 1,
+              "beginHour": 4,
+              "endHour": 5,
+              "classroom": "SB404"
+            },
+            {
+              "id": 41685,
+              "day": 3,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SB404"
+            }
+          ]
+        },
+        {
+          "id": 1948,
+          "code": "1155604-C",
+          "teacher": "Robles Angarita Miguel Fabian",
+          "program": "115",
+          "maxCapacity": 1,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41686,
+              "day": 0,
+              "beginHour": 1,
+              "endHour": 4,
+              "classroom": "SC204"
+            },
+            {
+              "id": 41687,
+              "day": 1,
+              "beginHour": 1,
+              "endHour": 4,
+              "classroom": "SC204"
+            },
+            {
+              "id": 41688,
+              "day": 2,
+              "beginHour": 1,
+              "endHour": 4,
+              "classroom": "SC204"
+            },
+            {
+              "id": 41689,
+              "day": 3,
+              "beginHour": 1,
+              "endHour": 4,
+              "classroom": "SC204"
+            },
+            {
+              "id": 41690,
+              "day": 4,
+              "beginHour": 1,
+              "endHour": 4,
+              "classroom": "SC204"
+            },
+            {
+              "id": 41691,
+              "day": 5,
+              "beginHour": 1,
+              "endHour": 4,
+              "classroom": "SC204"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1151,
+      "code": "1155704",
+      "name": "Teoria general de las comunicaciones",
+      "credits": 3,
+      "semester": 7,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1150,
+          "name": "Sistemas operativos",
+          "code": "1155604"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1495,
+          "code": "1155704-A",
+          "teacher": "Pardo Garcia Carlos Eduardo",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 9,
+          "sessions": [
+            {
+              "id": 41713,
+              "day": 0,
+              "beginHour": 4,
+              "endHour": 5,
+              "classroom": "SA413"
+            },
+            {
+              "id": 41714,
+              "day": 4,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SA413"
+            }
+          ]
+        },
+        {
+          "id": 1496,
+          "code": "1155704-B",
+          "teacher": "Pardo Garcia Carlos Eduardo",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 20,
+          "sessions": [
+            {
+              "id": 41715,
+              "day": 1,
+              "beginHour": 4,
+              "endHour": 5,
+              "classroom": "SA413"
+            },
+            {
+              "id": 41716,
+              "day": 2,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SA413"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1152,
+      "code": "1155804",
+      "name": "Redes de computadores",
+      "credits": 3,
+      "semester": 8,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1151,
+          "name": "Teoria general de las comunicaciones",
+          "code": "1155704"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1497,
+          "code": "1155804-A",
+          "teacher": "Calixto Cely Jose Martin",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 20,
+          "sessions": [
+            {
+              "id": 41749,
+              "day": 2,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SA413"
+            },
+            {
+              "id": 41750,
+              "day": 4,
+              "beginHour": 4,
+              "endHour": 5,
+              "classroom": "SA413"
+            }
+          ]
+        },
+        {
+          "id": 1498,
+          "code": "1155804-B",
+          "teacher": "Pardo Garcia Carlos Eduardo",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41751,
+              "day": 2,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SB403"
+            },
+            {
+              "id": 41752,
+              "day": 4,
+              "beginHour": 4,
+              "endHour": 5,
+              "classroom": "SA402"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1232,
+      "code": "1157002",
+      "name": "Redes convergentes",
+      "credits": 3,
+      "semester": 10,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1152,
+          "name": "Redes de computadores",
+          "code": "1155804"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": 1154,
+      "code": "1156803",
+      "name": "Redes inalambricas",
+      "credits": 3,
+      "semester": 8,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1151,
+          "name": "Teoria general de las comunicaciones",
+          "code": "1155704"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": 1155,
+      "code": "1156901",
+      "name": "Desarrollo de aplicaciones moviles",
+      "credits": 3,
+      "semester": 9,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1151,
+          "name": "Teoria general de las comunicaciones",
+          "code": "1155704"
+        },
+        {
+          "id": 1164,
+          "name": "Analisis y diseÑo de sistemas",
+          "code": "1155705"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1499,
+          "code": "1156901-A",
+          "teacher": "Herrera Caceres Matias",
+          "program": "115",
+          "maxCapacity": 25,
+          "availableCapacity": 9,
+          "sessions": [
+            {
+              "id": 41782,
+              "day": 1,
+              "beginHour": 9,
+              "endHour": 12,
+              "classroom": "SB401"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1156,
+      "code": "1156902",
+      "name": "Seguridad informatica",
+      "credits": 3,
+      "semester": 9,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1151,
+          "name": "Teoria general de las comunicaciones",
+          "code": "1155704"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1500,
+          "code": "1156902-A",
+          "teacher": "Villamizar Nuñez Cesar Antonio",
+          "program": "115",
+          "maxCapacity": 20,
+          "availableCapacity": 20,
+          "sessions": [
+            {
+              "id": 41783,
+              "day": 0,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "SB402"
+            },
+            {
+              "id": 41784,
+              "day": 3,
+              "beginHour": 1,
+              "endHour": 2,
+              "classroom": "SB401"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1158,
+      "code": "1156804",
+      "name": "Administracion de so de red",
+      "credits": 3,
+      "semester": 8,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1150,
+          "name": "Sistemas operativos",
+          "code": "1155604"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1502,
+          "code": "1156804-A",
+          "teacher": "Cequeda Olago Jean Polo",
+          "program": "115",
+          "maxCapacity": 20,
+          "availableCapacity": 20,
+          "sessions": [
+            {
+              "id": 41779,
+              "day": 4,
+              "beginHour": 9,
+              "endHour": 12,
+              "classroom": "SA411"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1234,
+      "code": "1157004",
+      "name": "Computacion en la nube",
+      "credits": 3,
+      "semester": 10,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1150,
+          "name": "Sistemas operativos",
+          "code": "1155604"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1578,
+          "code": "1157004-A",
+          "teacher": "Esteban Carrillo Daniel Andres",
+          "program": "115",
+          "maxCapacity": 20,
+          "availableCapacity": 3,
+          "sessions": [
+            {
+              "id": 41786,
+              "day": 0,
+              "beginHour": 9,
+              "endHour": 12,
+              "classroom": "SA401"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1236,
+      "code": "1157006",
+      "name": "Sistemas distribuidos",
+      "credits": 3,
+      "semester": 10,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1150,
+          "name": "Sistemas operativos",
+          "code": "1155604"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": 1245,
+      "code": "1155717",
+      "name": "Hacking defensivo y herramientas seguras",
+      "credits": 3,
+      "semester": 7,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1150,
+          "name": "Sistemas operativos",
+          "code": "1155604"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1582,
+          "code": "1155717-A",
+          "teacher": "Robles Angarita Miguel Fabian",
+          "program": "115",
+          "maxCapacity": 20,
+          "availableCapacity": 20,
+          "sessions": [
+            {
+              "id": 41746,
+              "day": 2,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "SA411"
+            },
+            {
+              "id": 41747,
+              "day": 4,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SA411"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1161,
+      "code": "1155615",
+      "name": "Multimedia y realidad mixta",
+      "credits": 3,
+      "semester": 6,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1149,
+          "name": "Arquitectura de computadores",
+          "code": "1155504"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1504,
+          "code": "1155615-A",
+          "teacher": "Rodriguez Ibañez Raul Eduardo",
+          "program": "115",
+          "maxCapacity": 20,
+          "availableCapacity": 6,
+          "sessions": [
+            {
+              "id": 41711,
+              "day": 4,
+              "beginHour": 9,
+              "endHour": 12,
+              "classroom": "SA401"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1162,
+      "code": "1155605",
+      "name": "Bases de datos",
+      "credits": 3,
+      "semester": 6,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1144,
+          "name": "Estructuras de datos",
+          "code": "1155304"
+        },
+        {
+          "id": 1187,
+          "name": "Programacion orientada a objetos II",
+          "code": "1155305"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1506,
+          "code": "1155605-B",
+          "teacher": "Angarita Sanguino Carlos Rene",
+          "program": "115",
+          "maxCapacity": 35,
+          "availableCapacity": 18,
+          "sessions": [
+            {
+              "id": 41692,
+              "day": 0,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SA401"
+            },
+            {
+              "id": 41693,
+              "day": 4,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SA402"
+            }
+          ]
+        },
+        {
+          "id": 1930,
+          "code": "1154405-A",
+          "teacher": "Parada Carmen Janeth",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 14,
+          "sessions": [
+            {
+              "id": 41694,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SB404"
+            },
+            {
+              "id": 41695,
+              "day": 4,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SA403"
+            }
+          ]
+        },
+        {
+          "id": 1950,
+          "code": "1154405-B",
+          "teacher": "-",
+          "program": "115",
+          "maxCapacity": 35,
+          "availableCapacity": 9,
+          "sessions": [
+            {
+              "id": 41696,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SA414"
+            },
+            {
+              "id": 41697,
+              "day": 4,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SB403"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1163,
+      "code": "1155523",
+      "name": "AnalÍtica de datos en modelos cognitivos",
+      "credits": 3,
+      "semester": 7,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1162,
+          "name": "Bases de datos",
+          "code": "1155605"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": 1164,
+      "code": "1155705",
+      "name": "Analisis y diseÑo de sistemas",
+      "credits": 4,
+      "semester": 7,
+      "requiredCredits": 50,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1162,
+          "name": "Bases de datos",
+          "code": "1155605"
+        },
+        {
+          "id": 1184,
+          "name": "Programacion web",
+          "code": "1155606"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1927,
+          "code": "1155705-A",
+          "teacher": "Rodriguez Tenjo Judith Del Pilar",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 10,
+          "sessions": [
+            {
+              "id": 41717,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SA404"
+            },
+            {
+              "id": 41718,
+              "day": 3,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SA414"
+            }
+          ]
+        },
+        {
+          "id": 1928,
+          "code": "1155705-B",
+          "teacher": "Rodriguez Tenjo Judith Del Pilar",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 3,
+          "sessions": [
+            {
+              "id": 41719,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SA401"
+            },
+            {
+              "id": 41720,
+              "day": 3,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SA402"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1165,
+      "code": "1155805",
+      "name": "Ingenieria de software",
+      "credits": 4,
+      "semester": 8,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1164,
+          "name": "Analisis y diseÑo de sistemas",
+          "code": "1155705"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1510,
+          "code": "1155805-A",
+          "teacher": "Rodriguez Tenjo Judith Del Pilar",
+          "program": "115",
+          "maxCapacity": 45,
+          "availableCapacity": 1,
+          "sessions": [
+            {
+              "id": 41753,
+              "day": 1,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "SA402"
+            },
+            {
+              "id": 41754,
+              "day": 3,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "SA414"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1166,
+      "code": "1155905",
+      "name": "Arquitectura de software",
+      "credits": 3,
+      "semester": 9,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1165,
+          "name": "Ingenieria de software",
+          "code": "1155805"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1511,
+          "code": "1155905-A",
+          "teacher": "Vera Rivera Fredy Humberto",
+          "program": "115",
+          "maxCapacity": 45,
+          "availableCapacity": 15,
+          "sessions": [
+            {
+              "id": 41767,
+              "day": 3,
+              "beginHour": 4,
+              "endHour": 7,
+              "classroom": "SA403"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1167,
+      "code": "1155906",
+      "name": "Estrategias para la empleabiliad en sistemas",
+      "credits": 3,
+      "semester": 9,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1165,
+          "name": "Ingenieria de software",
+          "code": "1155805"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1512,
+          "code": "1155906-A",
+          "teacher": "Esteban Carrillo Daniel Andres",
+          "program": "115",
+          "maxCapacity": 20,
+          "availableCapacity": 17,
+          "sessions": [
+            {
+              "id": 41768,
+              "day": 0,
+              "beginHour": 0,
+              "endHour": 3,
+              "classroom": "SC401"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1168,
+      "code": "1156904",
+      "name": "Herramientas tic para gestion de proyectos",
+      "credits": 3,
+      "semester": 9,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1165,
+          "name": "Ingenieria de software",
+          "code": "1155805"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": 1169,
+      "code": "1156906",
+      "name": "Auditoria de sistemas",
+      "credits": 3,
+      "semester": 9,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1165,
+          "name": "Ingenieria de software",
+          "code": "1155805"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": 1170,
+      "code": "1156907",
+      "name": "Arquitectura dirigida por ontologias",
+      "credits": 3,
+      "semester": 9,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1165,
+          "name": "Ingenieria de software",
+          "code": "1155805"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": 1171,
+      "code": "1159608",
+      "name": "Metodologias agiles para el desarrollo de software",
+      "credits": 3,
+      "semester": 9,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1165,
+          "name": "Ingenieria de software",
+          "code": "1155805"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": 1172,
+      "code": "1155809",
+      "name": "Seminario integrador III",
+      "credits": 2,
+      "semester": 8,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1184,
+          "name": "Programacion web",
+          "code": "1155606"
+        },
+        {
+          "id": 1185,
+          "name": "Seminario integrador II",
+          "code": "1155609"
+        },
+        {
+          "id": 1164,
+          "name": "Analisis y diseÑo de sistemas",
+          "code": "1155705"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1513,
+          "code": "1155809-A",
+          "teacher": "Parada Carmen Janeth",
+          "program": "115",
+          "maxCapacity": 25,
+          "availableCapacity": 7,
+          "sessions": [
+            {
+              "id": 41759,
+              "day": 3,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SB402"
+            }
+          ]
+        },
+        {
+          "id": 1514,
+          "code": "1155809-B",
+          "teacher": "Rojas Puentes Maria Del Pilar",
+          "program": "115",
+          "maxCapacity": 25,
+          "availableCapacity": 3,
+          "sessions": [
+            {
+              "id": 41760,
+              "day": 3,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SC401"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1173,
+      "code": "1155910",
+      "name": "Emprendimiento digital y transformacion tecnologica",
+      "credits": 3,
+      "semester": 9,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1164,
+          "name": "Analisis y diseÑo de sistemas",
+          "code": "1155705"
+        },
+        {
+          "id": 1209,
+          "name": "Formulacion y evaluacion de proyectos de sistemas",
+          "code": "1155808"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1515,
+          "code": "1155910-A",
+          "teacher": "Jaramillo Vega Jefferson Ferney",
+          "program": "115",
+          "maxCapacity": 15,
+          "availableCapacity": 14,
+          "sessions": [
+            {
+              "id": 41773,
+              "day": 1,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "SF401"
+            },
+            {
+              "id": 41774,
+              "day": 2,
+              "beginHour": 0,
+              "endHour": 1,
+              "classroom": "SB401"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1174,
+      "code": "1156801",
+      "name": "Sistemas de informacion geografica",
+      "credits": 3,
+      "semester": 8,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1164,
+          "name": "Analisis y diseÑo de sistemas",
+          "code": "1155705"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": 1175,
+      "code": "1156802",
+      "name": "Informatica educativa",
+      "credits": 3,
+      "semester": 8,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1164,
+          "name": "Analisis y diseÑo de sistemas",
+          "code": "1155705"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": 1231,
+      "code": "1157001",
+      "name": "Sistemas de informacion empresarial",
+      "credits": 3,
+      "semester": 10,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1164,
+          "name": "Analisis y diseÑo de sistemas",
+          "code": "1155705"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": 1233,
+      "code": "1157003",
+      "name": "Informatica juridica",
+      "credits": 3,
+      "semester": 10,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1164,
+          "name": "Analisis y diseÑo de sistemas",
+          "code": "1155705"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1577,
+          "code": "1157003-A",
+          "teacher": "Gonzalez Sanjuan Alvaro Javier",
+          "program": "115",
+          "maxCapacity": 20,
+          "availableCapacity": 19,
+          "sessions": [
+            {
+              "id": 41785,
+              "day": 5,
+              "beginHour": 1,
+              "endHour": 4,
+              "classroom": "SB401"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1178,
+      "code": "1155713",
+      "name": "Bases  de datos avanzadas",
+      "credits": 3,
+      "semester": 7,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1162,
+          "name": "Bases de datos",
+          "code": "1155605"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": 1179,
+      "code": "1155716",
+      "name": "Analitica de datos",
+      "credits": 3,
+      "semester": 7,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1162,
+          "name": "Bases de datos",
+          "code": "1155605"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1517,
+          "code": "1155716-A",
+          "teacher": "Beltran Galvis Nelson",
+          "program": "115",
+          "maxCapacity": 20,
+          "availableCapacity": 8,
+          "sessions": [
+            {
+              "id": 41744,
+              "day": 1,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SA402"
+            },
+            {
+              "id": 41745,
+              "day": 2,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "SA412"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1180,
+      "code": "1156701",
+      "name": "Patrones de diseÑo",
+      "credits": 3,
+      "semester": 7,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1162,
+          "name": "Bases de datos",
+          "code": "1155605"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1518,
+          "code": "1156701-A",
+          "teacher": "Rey Castillo Jonathan Rolando",
+          "program": "115",
+          "maxCapacity": 20,
+          "availableCapacity": 18,
+          "sessions": [
+            {
+              "id": 41775,
+              "day": 0,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "SB401"
+            },
+            {
+              "id": 41776,
+              "day": 2,
+              "beginHour": 0,
+              "endHour": 1,
+              "classroom": "SB403"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1181,
+      "code": "1156702",
+      "name": "Gestion de bases de datos",
+      "credits": 3,
+      "semester": 7,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1162,
+          "name": "Bases de datos",
+          "code": "1155605"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": 1183,
+      "code": "1157007",
+      "name": "Desarrollo de aplicaciones basadas en microservicios",
+      "credits": 3,
+      "semester": 7,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1184,
+          "name": "Programacion web",
+          "code": "1155606"
+        },
+        {
+          "id": 1162,
+          "name": "Bases de datos",
+          "code": "1155605"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1520,
+          "code": "1157007-A",
+          "teacher": "Vera Rivera Fredy Humberto",
+          "program": "115",
+          "maxCapacity": 20,
+          "availableCapacity": 14,
+          "sessions": [
+            {
+              "id": 41789,
+              "day": 2,
+              "beginHour": 4,
+              "endHour": 7,
+              "classroom": "SA411"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1235,
+      "code": "1157005",
+      "name": "Mineria de datos",
+      "credits": 3,
+      "semester": 10,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1184,
+          "name": "Programacion web",
+          "code": "1155606"
+        },
+        {
+          "id": 1162,
+          "name": "Bases de datos",
+          "code": "1155605"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1579,
+          "code": "1157005-A",
+          "teacher": "Beltran Galvis Nelson",
+          "program": "115",
+          "maxCapacity": 20,
+          "availableCapacity": 12,
+          "sessions": [
+            {
+              "id": 41787,
+              "day": 2,
+              "beginHour": 3,
+              "endHour": 4,
+              "classroom": "SA412"
+            },
+            {
+              "id": 41788,
+              "day": 3,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SA414"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1248,
+      "code": "1155718",
+      "name": "Data transformation and viz",
+      "credits": 3,
+      "semester": 7,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1162,
+          "name": "Bases de datos",
+          "code": "1155605"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1588,
+          "code": "1155718-A",
+          "teacher": "Perez Gutierrez Boris Rainiero",
+          "program": "115",
+          "maxCapacity": 15,
+          "availableCapacity": 1,
+          "sessions": [
+            {
+              "id": 41748,
+              "day": 2,
+              "beginHour": 8,
+              "endHour": 11,
+              "classroom": "SB404"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1184,
+      "code": "1155606",
+      "name": "Programacion web",
+      "credits": 3,
+      "semester": 6,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1144,
+          "name": "Estructuras de datos",
+          "code": "1155304"
+        },
+        {
+          "id": 1187,
+          "name": "Programacion orientada a objetos II",
+          "code": "1155305"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1521,
+          "code": "1155606-A",
+          "teacher": "Esteban Carrillo Daniel Andres",
+          "program": "115",
+          "maxCapacity": 25,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41698,
+              "day": 3,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "SA402"
+            },
+            {
+              "id": 41699,
+              "day": 4,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "SA401"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1185,
+      "code": "1155609",
+      "name": "Seminario integrador II",
+      "credits": 2,
+      "semester": 6,
+      "requiredCredits": 75,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1144,
+          "name": "Estructuras de datos",
+          "code": "1155304"
+        },
+        {
+          "id": 1191,
+          "name": "Seminario integrador I",
+          "code": "1155209"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1524,
+          "code": "1155609-A",
+          "teacher": "Pardo Garcia Carlos Eduardo",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 13,
+          "sessions": [
+            {
+              "id": 41708,
+              "day": 0,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SA414"
+            }
+          ]
+        },
+        {
+          "id": 1525,
+          "code": "1155609-B",
+          "teacher": "Leal Pabon Jessica Lorena",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41709,
+              "day": 0,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SA401"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1186,
+      "code": "1156703",
+      "name": "Inteligencia artificial",
+      "credits": 3,
+      "semester": 7,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1144,
+          "name": "Estructuras de datos",
+          "code": "1155304"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1526,
+          "code": "1156703-A",
+          "teacher": "Gutierrez Buitrago Ana Gissel",
+          "program": "115",
+          "maxCapacity": 20,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41777,
+              "day": 1,
+              "beginHour": 1,
+              "endHour": 2,
+              "classroom": "SB402"
+            },
+            {
+              "id": 41778,
+              "day": 2,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "SF404"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1187,
+      "code": "1155305",
+      "name": "Programacion orientada a objetos II",
+      "credits": 3,
+      "semester": 3,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1143,
+          "name": "Programacion orientada a objetos",
+          "code": "1155204"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1934,
+          "code": "1154404-A",
+          "teacher": "Herrera Caceres Matias",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41594,
+              "day": 1,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SB401"
+            },
+            {
+              "id": 41595,
+              "day": 3,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SB403"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1188,
+      "code": "1155613",
+      "name": "Analisis de datos sobre python",
+      "credits": 3,
+      "semester": 6,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1187,
+          "name": "Programacion orientada a objetos II",
+          "code": "1155305"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": 1189,
+      "code": "1155614",
+      "name": "Deuda tÉcnica en el desarrollo de software",
+      "credits": 0,
+      "semester": 6,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1187,
+          "name": "Programacion orientada a objetos II",
+          "code": "1155305"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": 1190,
+      "code": "1155811",
+      "name": "Laboratorio de programacion",
+      "credits": 3,
+      "semester": 6,
+      "requiredCredits": 40,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1143,
+          "name": "Programacion orientada a objetos",
+          "code": "1155204"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1870,
+          "code": "1154204-A",
+          "teacher": "Rojas Puentes Maria Del Pilar",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 3,
+          "sessions": [
+            {
+              "id": 41761,
+              "day": 0,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SB404"
+            },
+            {
+              "id": 41762,
+              "day": 2,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SB404"
+            }
+          ]
+        },
+        {
+          "id": 1871,
+          "code": "1154204-B",
+          "teacher": "Gomez Llanez Claudia Yamile",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41763,
+              "day": 0,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SA411"
+            },
+            {
+              "id": 41764,
+              "day": 2,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SA403"
+            }
+          ]
+        },
+        {
+          "id": 1872,
+          "code": "1154204-C",
+          "teacher": "Vera Rivera Fredy Humberto",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41765,
+              "day": 0,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SA402"
+            },
+            {
+              "id": 41766,
+              "day": 2,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SA404"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1191,
+      "code": "1155209",
+      "name": "Seminario integrador I",
+      "credits": 1,
+      "semester": 2,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1240,
+          "name": "Fundamentos de programacion",
+          "code": "1155104"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1932,
+          "code": "1154306-A",
+          "teacher": "Perez Gutierrez Boris Rainiero",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 7,
+          "sessions": [
+            {
+              "id": 41487,
+              "day": 4,
+              "beginHour": 1,
+              "endHour": 2,
+              "classroom": "SB403"
+            }
+          ]
+        },
+        {
+          "id": 1933,
+          "code": "1154306-B",
+          "teacher": "Vera Rivera Fredy Humberto",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 7,
+          "sessions": [
+            {
+              "id": 41488,
+              "day": 4,
+              "beginHour": 1,
+              "endHour": 2,
+              "classroom": "SC401"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1192,
+      "code": "1155306",
+      "name": "Seminario de investigacion I",
+      "credits": 2,
+      "semester": 3,
+      "requiredCredits": 23,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1191,
+          "name": "Seminario integrador I",
+          "code": "1155209"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1533,
+          "code": "1155306-A",
+          "teacher": "Diaz Leal Nelly Rosana",
+          "program": "115",
+          "maxCapacity": 20,
+          "availableCapacity": 8,
+          "sessions": [
+            {
+              "id": 41596,
+              "day": 4,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SB402"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1193,
+      "code": "1155506",
+      "name": "Seminario de investigacion II",
+      "credits": 2,
+      "semester": 5,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1192,
+          "name": "Seminario de investigacion I",
+          "code": "1155306"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1534,
+          "code": "1155506-A",
+          "teacher": "Diaz Leal Nelly Rosana",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 18,
+          "sessions": [
+            {
+              "id": 41673,
+              "day": 1,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SA411"
+            }
+          ]
+        },
+        {
+          "id": 1535,
+          "code": "1155506-B",
+          "teacher": "Pardo Garcia Carlos Eduardo",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 30,
+          "sessions": [
+            {
+              "id": 41674,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SA411"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1194,
+      "code": "1155706",
+      "name": "Seminario de investigacion III",
+      "credits": 2,
+      "semester": 7,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1193,
+          "name": "Seminario de investigacion II",
+          "code": "1155506"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1536,
+          "code": "1155706-A",
+          "teacher": "Gomez Llanez Claudia Yamile",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 18,
+          "sessions": [
+            {
+              "id": 41721,
+              "day": 0,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SB402"
+            }
+          ]
+        },
+        {
+          "id": 1537,
+          "code": "1155706-B",
+          "teacher": "Gomez Llanez Claudia Yamile",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 3,
+          "sessions": [
+            {
+              "id": 41722,
+              "day": 3,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SB404"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1196,
+      "code": "1155521",
+      "name": "Nuevas tecnologias y sociedad",
+      "credits": 2,
+      "semester": 5,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1241,
+          "name": "Introduccion ing sistemas",
+          "code": "1155105"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": 1198,
+      "code": "1155206",
+      "name": "Comunicacion II",
+      "credits": 2,
+      "semester": 2,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1242,
+          "name": "Comunicacion I",
+          "code": "1155106"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1873,
+          "code": "1110206-A",
+          "teacher": "Galvis Ferreira Carlos Julio",
+          "program": "111",
+          "maxCapacity": 35,
+          "availableCapacity": 4,
+          "sessions": [
+            {
+              "id": 41482,
+              "day": 4,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "AO301"
+            }
+          ]
+        },
+        {
+          "id": 1874,
+          "code": "1110206-B",
+          "teacher": "Hernandez Bautista Manuel Jose",
+          "program": "111",
+          "maxCapacity": 35,
+          "availableCapacity": 1,
+          "sessions": [
+            {
+              "id": 41483,
+              "day": 4,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "AG301"
+            }
+          ]
+        },
+        {
+          "id": 1875,
+          "code": "1110206-C",
+          "teacher": "Galeano Sandoval Carlos Eduardo",
+          "program": "111",
+          "maxCapacity": 35,
+          "availableCapacity": 7,
+          "sessions": [
+            {
+              "id": 41484,
+              "day": 4,
+              "beginHour": 8,
+              "endHour": 10,
+              "classroom": "AG205"
+            }
+          ]
+        },
+        {
+          "id": 1876,
+          "code": "1154205-A",
+          "teacher": "Galvis Ferreira Carlos Julio",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 1,
+          "sessions": [
+            {
+              "id": 41485,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SF304"
+            }
+          ]
+        },
+        {
+          "id": 1877,
+          "code": "1154205-B",
+          "teacher": "Ramirez Jaimes Gloria Mabel",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 15,
+          "sessions": [
+            {
+              "id": 41486,
+              "day": 4,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "SB203"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1200,
+      "code": "1155406",
+      "name": "Descubriendo negocios basados tic (opcional)",
+      "credits": 2,
+      "semester": 4,
+      "requiredCredits": 58,
+      "type": "ELECTIVE",
+      "requisites": [],
+      "groups": []
+    },
+    {
+      "id": 1201,
+      "code": "1155511",
+      "name": "Problemas sociales de frontera",
+      "credits": 2,
+      "semester": 5,
+      "requiredCredits": 5,
+      "type": "ELECTIVE",
+      "requisites": [],
+      "groups": []
+    },
+    {
+      "id": 1202,
+      "code": "1155513",
+      "name": "Psicologia",
+      "credits": 2,
+      "semester": 5,
+      "requiredCredits": 5,
+      "type": "ELECTIVE",
+      "requisites": [],
+      "groups": [
+        {
+          "id": 1539,
+          "code": "1155513-A",
+          "teacher": "Colmenares Ramirez Estrella De Los Angeles",
+          "program": "115",
+          "maxCapacity": 40,
+          "availableCapacity": 37,
+          "sessions": [
+            {
+              "id": 41675,
+              "day": 3,
+              "beginHour": 5,
+              "endHour": 7,
+              "classroom": "SA208"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1203,
+      "code": "1155515",
+      "name": "Psicologia industrial",
+      "credits": 2,
+      "semester": 5,
+      "requiredCredits": 5,
+      "type": "ELECTIVE",
+      "requisites": [],
+      "groups": [
+        {
+          "id": 1540,
+          "code": "1155515-A",
+          "teacher": "Castellanos Caipa Ruth Adriana",
+          "program": "115",
+          "maxCapacity": 40,
+          "availableCapacity": 38,
+          "sessions": [
+            {
+              "id": 41676,
+              "day": 0,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SA311"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1204,
+      "code": "1155516",
+      "name": "Catedra de paz, desarrollo y posconflicto",
+      "credits": 2,
+      "semester": 5,
+      "requiredCredits": 5,
+      "type": "ELECTIVE",
+      "requisites": [],
+      "groups": [
+        {
+          "id": 1541,
+          "code": "1155516-A",
+          "teacher": "Cristancho Villamizar Bernardo Xavier",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 24,
+          "sessions": [
+            {
+              "id": 41677,
+              "day": 2,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SA206"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1205,
+      "code": "1155522",
+      "name": "Relaciones humanas",
+      "credits": 2,
+      "semester": 5,
+      "requiredCredits": 60,
+      "type": "ELECTIVE",
+      "requisites": [],
+      "groups": [
+        {
+          "id": 1542,
+          "code": "1155522-A",
+          "teacher": "Cristancho Torres Jesus Uriel",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 20,
+          "sessions": [
+            {
+              "id": 41678,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SD201"
+            }
+          ]
+        },
+        {
+          "id": 1543,
+          "code": "1110905-A",
+          "teacher": "Rojas Mendoza Yenni Carolina",
+          "program": "111",
+          "maxCapacity": 45,
+          "availableCapacity": 3,
+          "sessions": [
+            {
+              "id": 41679,
+              "day": 0,
+              "beginHour": 10,
+              "endHour": 12,
+              "classroom": "AO203"
+            }
+          ]
+        },
+        {
+          "id": 1544,
+          "code": "1110905-B",
+          "teacher": "Caceres Cogollo Edith",
+          "program": "111",
+          "maxCapacity": 45,
+          "availableCapacity": 1,
+          "sessions": [
+            {
+              "id": 41680,
+              "day": 3,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "AO205"
+            }
+          ]
+        },
+        {
+          "id": 1545,
+          "code": "1120722-A",
+          "teacher": "Angarita Sanchez Ana Helena",
+          "program": "112",
+          "maxCapacity": 45,
+          "availableCapacity": 28,
+          "sessions": [
+            {
+              "id": 41681,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SP205"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1206,
+      "code": "1155607",
+      "name": "Constitucion y civismo",
+      "credits": 2,
+      "semester": 6,
+      "requiredCredits": 20,
+      "type": "MANDATORY",
+      "requisites": [],
+      "groups": [
+        {
+          "id": 1546,
+          "code": "1155607-A",
+          "teacher": "Gandolfo Quintero Genni Leonor",
+          "program": "115",
+          "maxCapacity": 40,
+          "availableCapacity": 29,
+          "sessions": [
+            {
+              "id": 41700,
+              "day": 2,
+              "beginHour": 5,
+              "endHour": 7,
+              "classroom": "AG404"
+            }
+          ]
+        },
+        {
+          "id": 1547,
+          "code": "1110305-A",
+          "teacher": "Cristancho Villamizar Bernardo Xavier",
+          "program": "111",
+          "maxCapacity": 40,
+          "availableCapacity": 17,
+          "sessions": [
+            {
+              "id": 41701,
+              "day": 0,
+              "beginHour": 12,
+              "endHour": 14,
+              "classroom": "AO204"
+            }
+          ]
+        },
+        {
+          "id": 1548,
+          "code": "1110305-B",
+          "teacher": "Vahos Arias Yollmar Gildardo",
+          "program": "111",
+          "maxCapacity": 40,
+          "availableCapacity": 16,
+          "sessions": [
+            {
+              "id": 41702,
+              "day": 0,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "AO301"
+            }
+          ]
+        },
+        {
+          "id": 1549,
+          "code": "1110305-C",
+          "teacher": "Sanchez Dueñas Luis Arnulfo",
+          "program": "111",
+          "maxCapacity": 40,
+          "availableCapacity": 3,
+          "sessions": [
+            {
+              "id": 41703,
+              "day": 2,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "AO302"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1207,
+      "code": "1155608",
+      "name": "Planeacion estrategica de sistemas de inf",
+      "credits": 3,
+      "semester": 6,
+      "requiredCredits": 48,
+      "type": "MANDATORY",
+      "requisites": [],
+      "groups": [
+        {
+          "id": 1550,
+          "code": "1155608-A",
+          "teacher": "Diaz Leal Nelly Rosana",
+          "program": "115",
+          "maxCapacity": 35,
+          "availableCapacity": 9,
+          "sessions": [
+            {
+              "id": 41704,
+              "day": 0,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SA403"
+            },
+            {
+              "id": 41705,
+              "day": 2,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "SB402"
+            }
+          ]
+        },
+        {
+          "id": 1551,
+          "code": "1155608-B",
+          "teacher": "Diaz Leal Nelly Rosana",
+          "program": "115",
+          "maxCapacity": 35,
+          "availableCapacity": 16,
+          "sessions": [
+            {
+              "id": 41706,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SB402"
+            },
+            {
+              "id": 41707,
+              "day": 2,
+              "beginHour": 3,
+              "endHour": 4,
+              "classroom": "SA411"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1208,
+      "code": "1155708",
+      "name": "Administracion de proyectos informaticos",
+      "credits": 3,
+      "semester": 7,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1207,
+          "name": "Planeacion estrategica de sistemas de inf",
+          "code": "1155608"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1552,
+          "code": "1155708-A",
+          "teacher": "Rojas Puentes Maria Del Pilar",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41729,
+              "day": 0,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "SA411"
+            },
+            {
+              "id": 41730,
+              "day": 4,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SB404"
+            }
+          ]
+        },
+        {
+          "id": 1553,
+          "code": "1155708-B",
+          "teacher": "Leal Pabon Jessica Lorena",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41731,
+              "day": 0,
+              "beginHour": 1,
+              "endHour": 4,
+              "classroom": "SA403"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1209,
+      "code": "1155808",
+      "name": "Formulacion y evaluacion de proyectos de sistemas",
+      "credits": 3,
+      "semester": 8,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1208,
+          "name": "Administracion de proyectos informaticos",
+          "code": "1155708"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1554,
+          "code": "1155808-A",
+          "teacher": "Parada Carmen Janeth",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 6,
+          "sessions": [
+            {
+              "id": 41755,
+              "day": 0,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "SB403"
+            },
+            {
+              "id": 41756,
+              "day": 2,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SA403"
+            }
+          ]
+        },
+        {
+          "id": 1555,
+          "code": "1155808-B",
+          "teacher": "Rojas Puentes Maria Del Pilar",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 11,
+          "sessions": [
+            {
+              "id": 41757,
+              "day": 0,
+              "beginHour": 3,
+              "endHour": 4,
+              "classroom": "SA402"
+            },
+            {
+              "id": 41758,
+              "day": 2,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SA402"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1210,
+      "code": "1155908",
+      "name": "Gestion de tics",
+      "credits": 2,
+      "semester": 9,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1209,
+          "name": "Formulacion y evaluacion de proyectos de sistemas",
+          "code": "1155808"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1556,
+          "code": "1155908-A",
+          "teacher": "Diaz Leal Nelly Rosana",
+          "program": "115",
+          "maxCapacity": 45,
+          "availableCapacity": 8,
+          "sessions": [
+            {
+              "id": 41769,
+              "day": 2,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SB403"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1211,
+      "code": "1155810",
+      "name": "Adquisiciones en la gestiÓn de proyectos",
+      "credits": 3,
+      "semester": 8,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1208,
+          "name": "Administracion de proyectos informaticos",
+          "code": "1155708"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": 1212,
+      "code": "1155711",
+      "name": "Tecnicas gerenciales y de negociacion",
+      "credits": 3,
+      "semester": 7,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1207,
+          "name": "Planeacion estrategica de sistemas de inf",
+          "code": "1155608"
+        }
+      ],
+      "groups": []
+    },
+    {
+      "id": 1213,
+      "code": "1155712",
+      "name": "Economia y finanzas para ingenieros",
+      "credits": 3,
+      "semester": 7,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1207,
+          "name": "Planeacion estrategica de sistemas de inf",
+          "code": "1155608"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1557,
+          "code": "1155712-A",
+          "teacher": "Velasco Fernandez Oscar Dario",
+          "program": "115",
+          "maxCapacity": 35,
+          "availableCapacity": 18,
+          "sessions": [
+            {
+              "id": 41732,
+              "day": 2,
+              "beginHour": 4,
+              "endHour": 7,
+              "classroom": "AG302"
+            }
+          ]
+        },
+        {
+          "id": 1558,
+          "code": "1110706-A",
+          "teacher": "Peña Caceres Omar Enrique",
+          "program": "111",
+          "maxCapacity": 40,
+          "availableCapacity": 15,
+          "sessions": [
+            {
+              "id": 41733,
+              "day": 0,
+              "beginHour": 10,
+              "endHour": 11,
+              "classroom": "AO401"
+            },
+            {
+              "id": 41734,
+              "day": 4,
+              "beginHour": 10,
+              "endHour": 12,
+              "classroom": "AO204"
+            }
+          ]
+        },
+        {
+          "id": 1559,
+          "code": "1110706-B",
+          "teacher": "Peña Caceres Omar Enrique",
+          "program": "111",
+          "maxCapacity": 40,
+          "availableCapacity": 14,
+          "sessions": [
+            {
+              "id": 41735,
+              "day": 0,
+              "beginHour": 6,
+              "endHour": 8,
+              "classroom": "AO402"
+            },
+            {
+              "id": 41736,
+              "day": 4,
+              "beginHour": 6,
+              "endHour": 7,
+              "classroom": "AO402"
+            }
+          ]
+        },
+        {
+          "id": 1560,
+          "code": "1110706-C",
+          "teacher": "Rodriguez Guevara Jorge Enrique",
+          "program": "111",
+          "maxCapacity": 40,
+          "availableCapacity": 11,
+          "sessions": [
+            {
+              "id": 41737,
+              "day": 0,
+              "beginHour": 6,
+              "endHour": 8,
+              "classroom": "AO201"
+            },
+            {
+              "id": 41738,
+              "day": 4,
+              "beginHour": 6,
+              "endHour": 7,
+              "classroom": "AO401"
+            }
+          ]
+        },
+        {
+          "id": 1561,
+          "code": "1160063-A",
+          "teacher": "Velasco Fernandez Oscar Dario",
+          "program": "116",
+          "maxCapacity": 40,
+          "availableCapacity": 10,
+          "sessions": [
+            {
+              "id": 41739,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SE202"
+            },
+            {
+              "id": 41740,
+              "day": 2,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "SF201"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1214,
+      "code": "1155714",
+      "name": "TransformaciÓn digital de las organizaciones",
+      "credits": 3,
+      "semester": 7,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1207,
+          "name": "Planeacion estrategica de sistemas de inf",
+          "code": "1155608"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1587,
+          "code": "1155714-A",
+          "teacher": "Diaz Leal Nelly Rosana",
+          "program": "115",
+          "maxCapacity": 20,
+          "availableCapacity": 20,
+          "sessions": [
+            {
+              "id": 41741,
+              "day": 0,
+              "beginHour": 3,
+              "endHour": 4,
+              "classroom": "SB401"
+            },
+            {
+              "id": 41742,
+              "day": 4,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SB401"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1215,
+      "code": "1156805",
+      "name": "Gerencia y tecnologia",
+      "credits": 3,
+      "semester": 8,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1207,
+          "name": "Planeacion estrategica de sistemas de inf",
+          "code": "1155608"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1562,
+          "code": "1156805-A",
+          "teacher": "Parada Carmen Janeth",
+          "program": "115",
+          "maxCapacity": 20,
+          "availableCapacity": 16,
+          "sessions": [
+            {
+              "id": 41780,
+              "day": 0,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SC401"
+            },
+            {
+              "id": 41781,
+              "day": 3,
+              "beginHour": 3,
+              "endHour": 4,
+              "classroom": "SA401"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1216,
+      "code": "1155611",
+      "name": "Proyecto social en ing de sistemas",
+      "credits": 2,
+      "semester": 6,
+      "requiredCredits": 40,
+      "type": "ELECTIVE",
+      "requisites": [],
+      "groups": [
+        {
+          "id": 1924,
+          "code": "1154309-A",
+          "teacher": "Murillo Rodriguez Dioselina",
+          "program": "115",
+          "maxCapacity": 20,
+          "availableCapacity": 5,
+          "sessions": [
+            {
+              "id": 41710,
+              "day": 3,
+              "beginHour": 8,
+              "endHour": 10,
+              "classroom": "SA402"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1217,
+      "code": "1155715",
+      "name": "Soluciones tecnologica en el contexto social",
+      "credits": 3,
+      "semester": 7,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [
+        {
+          "id": 1216,
+          "name": "Proyecto social en ing de sistemas",
+          "code": "1155611"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1563,
+          "code": "1155715-A",
+          "teacher": "Murillo Rodriguez Dioselina",
+          "program": "115",
+          "maxCapacity": 20,
+          "availableCapacity": 17,
+          "sessions": [
+            {
+              "id": 41743,
+              "day": 1,
+              "beginHour": 8,
+              "endHour": 11,
+              "classroom": "SA401"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1218,
+      "code": "1155612",
+      "name": "Crecimeinto de negocios (opcional)",
+      "credits": 2,
+      "semester": 6,
+      "requiredCredits": 80,
+      "type": "ELECTIVE",
+      "requisites": [],
+      "groups": []
+    },
+    {
+      "id": 1219,
+      "code": "1155707",
+      "name": "Etica profesional",
+      "credits": 2,
+      "semester": 7,
+      "requiredCredits": 90,
+      "type": "MANDATORY",
+      "requisites": [],
+      "groups": [
+        {
+          "id": 1564,
+          "code": "1155707-A",
+          "teacher": "Peñaranda Cantillo Merly Natalia",
+          "program": "115",
+          "maxCapacity": 35,
+          "availableCapacity": 1,
+          "sessions": [
+            {
+              "id": 41723,
+              "day": 4,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SA205"
+            }
+          ]
+        },
+        {
+          "id": 1565,
+          "code": "1110805-A",
+          "teacher": "Carvajal Suarez Freddy Orlando",
+          "program": "111",
+          "maxCapacity": 45,
+          "availableCapacity": 8,
+          "sessions": [
+            {
+              "id": 41724,
+              "day": 0,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SG206"
+            }
+          ]
+        },
+        {
+          "id": 1566,
+          "code": "1110805-B",
+          "teacher": "Angarita Sanchez Ana Helena",
+          "program": "111",
+          "maxCapacity": 45,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41725,
+              "day": 2,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "AO201"
+            }
+          ]
+        },
+        {
+          "id": 1567,
+          "code": "1110805-C",
+          "teacher": "Gomez Lugo Alejandra",
+          "program": "111",
+          "maxCapacity": 45,
+          "availableCapacity": 30,
+          "sessions": [
+            {
+              "id": 41726,
+              "day": 2,
+              "beginHour": 12,
+              "endHour": 14,
+              "classroom": "AO201"
+            }
+          ]
+        },
+        {
+          "id": 1568,
+          "code": "1160034-A",
+          "teacher": "Sepulveda Riveros Noema",
+          "program": "116",
+          "maxCapacity": 40,
+          "availableCapacity": 5,
+          "sessions": [
+            {
+              "id": 41727,
+              "day": 1,
+              "beginHour": 10,
+              "endHour": 12,
+              "classroom": "AG303"
+            }
+          ]
+        },
+        {
+          "id": 1569,
+          "code": "1191904-A",
+          "teacher": "Angarita Sanchez Ana Helena",
+          "program": "119",
+          "maxCapacity": 47,
+          "availableCapacity": 8,
+          "sessions": [
+            {
+              "id": 41728,
+              "day": 4,
+              "beginHour": 8,
+              "endHour": 10,
+              "classroom": "AG301"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1220,
+      "code": "1155909",
+      "name": "Practica en ing de sistemas",
+      "credits": 6,
+      "semester": 9,
+      "requiredCredits": 130,
+      "type": "MANDATORY",
+      "requisites": [],
+      "groups": [
+        {
+          "id": 1570,
+          "code": "1155909-A",
+          "teacher": "Calixto Cely Jose Martin",
+          "program": "115",
+          "maxCapacity": 12,
+          "availableCapacity": 6,
+          "sessions": [
+            {
+              "id": 41770,
+              "day": 3,
+              "beginHour": 8,
+              "endHour": 12,
+              "classroom": "SA411"
+            }
+          ]
+        },
+        {
+          "id": 1571,
+          "code": "1155909-B",
+          "teacher": "Calixto Cely Jose Martin",
+          "program": "115",
+          "maxCapacity": 12,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41771,
+              "day": 4,
+              "beginHour": 8,
+              "endHour": 12,
+              "classroom": "SA312"
+            }
+          ]
+        },
+        {
+          "id": 1572,
+          "code": "1155909-C",
+          "teacher": "Robles Angarita Miguel Fabian",
+          "program": "115",
+          "maxCapacity": 12,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41772,
+              "day": 1,
+              "beginHour": 8,
+              "endHour": 12,
+              "classroom": "SC402"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1222,
+      "code": "1156807",
+      "name": "Compiladores",
+      "credits": 3,
+      "semester": 6,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [],
+      "groups": []
+    },
+    {
+      "id": 1223,
+      "code": "1156808",
+      "name": "Las tic  y la educacion ambiental",
+      "credits": 3,
+      "semester": 6,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [],
+      "groups": []
+    },
+    {
+      "id": 1224,
+      "code": "1156903",
+      "name": "Proyecto academico",
+      "credits": 15,
+      "semester": 9,
+      "requiredCredits": 150,
+      "type": "ELECTIVE",
+      "requisites": [],
+      "groups": []
+    },
+    {
+      "id": 1228,
+      "code": "1151059",
+      "name": "Sistemas distribuidos",
+      "credits": 3,
+      "semester": 10,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [],
+      "groups": []
+    },
+    {
+      "id": 1229,
+      "code": "1156001",
+      "name": "Proyecto de grado",
+      "credits": 8,
+      "semester": 10,
+      "requiredCredits": 100,
+      "type": "MANDATORY",
+      "requisites": [],
+      "groups": []
+    },
+    {
+      "id": 1230,
+      "code": "1156910",
+      "name": "Redes neuronales",
+      "credits": 3,
+      "semester": 10,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [],
+      "groups": []
+    },
+    {
+      "id": 1238,
+      "code": "1155101",
+      "name": "Calculo diferencial",
+      "credits": 4,
+      "semester": 1,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [],
+      "groups": [
+        {
+          "id": 1814,
+          "code": "1110101-A",
+          "teacher": "Garcia Martinez Myriam Deisy",
+          "program": "111",
+          "maxCapacity": 45,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41327,
+              "day": 0,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "AO301"
+            },
+            {
+              "id": 41328,
+              "day": 2,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "AO302"
+            }
+          ]
+        },
+        {
+          "id": 1815,
+          "code": "1110101-B",
+          "teacher": "Maduro Mendoza Ricardo Alfonso",
+          "program": "111",
+          "maxCapacity": 40,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41329,
+              "day": 0,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "AO302"
+            },
+            {
+              "id": 41330,
+              "day": 2,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "AO302"
+            }
+          ]
+        },
+        {
+          "id": 1816,
+          "code": "1154101-A",
+          "teacher": "Garcia Martinez Ruth Stella",
+          "program": "115",
+          "maxCapacity": 40,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41331,
+              "day": 2,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "SC101"
+            },
+            {
+              "id": 41332,
+              "day": 3,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "FU102"
+            }
+          ]
+        },
+        {
+          "id": 1817,
+          "code": "1154101-B",
+          "teacher": "Cely Niño Jairo Wilgberto",
+          "program": "115",
+          "maxCapacity": 35,
+          "availableCapacity": 15,
+          "sessions": [
+            {
+              "id": 41333,
+              "day": 2,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "SA207"
+            },
+            {
+              "id": 41334,
+              "day": 3,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SA312"
+            }
+          ]
+        },
+        {
+          "id": 1818,
+          "code": "1191101-A",
+          "teacher": "Caceres Carvajal Maria Olga",
+          "program": "119",
+          "maxCapacity": 45,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41335,
+              "day": 2,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SG401"
+            },
+            {
+              "id": 41336,
+              "day": 4,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SE303"
+            }
+          ]
+        },
+        {
+          "id": 1819,
+          "code": "1191101-B",
+          "teacher": "Jaimes Fonseca Luz Karime",
+          "program": "119",
+          "maxCapacity": 25,
+          "availableCapacity": 5,
+          "sessions": [
+            {
+              "id": 41337,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SA210"
+            },
+            {
+              "id": 41338,
+              "day": 3,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SP207"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1244,
+      "code": "1155201",
+      "name": "Calculo integral",
+      "credits": 4,
+      "semester": 2,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [
+        {
+          "id": 1238,
+          "name": "Calculo diferencial",
+          "code": "1155101"
+        }
+      ],
+      "groups": [
+        {
+          "id": 1824,
+          "code": "1110201-A",
+          "teacher": "Gomez Vergel Alvaro Fernando",
+          "program": "111",
+          "maxCapacity": 40,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41349,
+              "day": 0,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "AO204"
+            },
+            {
+              "id": 41350,
+              "day": 2,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "AO402"
+            }
+          ]
+        },
+        {
+          "id": 1825,
+          "code": "1110201-B",
+          "teacher": "Ramirez Leal Pastor",
+          "program": "111",
+          "maxCapacity": 45,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41351,
+              "day": 0,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "AO402"
+            },
+            {
+              "id": 41352,
+              "day": 1,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "AO402"
+            }
+          ]
+        },
+        {
+          "id": 1826,
+          "code": "1110201-C",
+          "teacher": "Quintero Acosta Miguel Angel",
+          "program": "111",
+          "maxCapacity": 40,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41353,
+              "day": 0,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "AO202"
+            },
+            {
+              "id": 41354,
+              "day": 2,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "AO204"
+            }
+          ]
+        },
+        {
+          "id": 1827,
+          "code": "1110201-D",
+          "teacher": "Acevedo Rodriguez Gustavo Adolfo",
+          "program": "111",
+          "maxCapacity": 30,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41355,
+              "day": 0,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SP108"
+            },
+            {
+              "id": 41356,
+              "day": 2,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "FU101"
+            }
+          ]
+        },
+        {
+          "id": 1828,
+          "code": "1154201-A",
+          "teacher": "Gomez Vergel Alvaro Fernando",
+          "program": "115",
+          "maxCapacity": 35,
+          "availableCapacity": 9,
+          "sessions": [
+            {
+              "id": 41357,
+              "day": 1,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "SA312"
+            },
+            {
+              "id": 41358,
+              "day": 3,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "SA312"
+            }
+          ]
+        },
+        {
+          "id": 1829,
+          "code": "1154201-B",
+          "teacher": "Caceres Carvajal Maria Olga",
+          "program": "115",
+          "maxCapacity": 35,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41359,
+              "day": 0,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "SA312"
+            },
+            {
+              "id": 41360,
+              "day": 2,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "SA312"
+            }
+          ]
+        },
+        {
+          "id": 1830,
+          "code": "1160020-A",
+          "teacher": "Maldonado Carvajal Luz Silvana",
+          "program": "116",
+          "maxCapacity": 40,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41361,
+              "day": 2,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "SA204"
+            },
+            {
+              "id": 41362,
+              "day": 3,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "SA204"
+            }
+          ]
+        },
+        {
+          "id": 1831,
+          "code": "1160020-B",
+          "teacher": "Maldonado Carvajal Luz Silvana",
+          "program": "116",
+          "maxCapacity": 40,
+          "availableCapacity": 13,
+          "sessions": [
+            {
+              "id": 41363,
+              "day": 0,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "SE101"
+            },
+            {
+              "id": 41364,
+              "day": 1,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "SC104"
+            }
+          ]
+        },
+        {
+          "id": 1832,
+          "code": "1191201-A",
+          "teacher": "Jaimes Fonseca Luz Karime",
+          "program": "119",
+          "maxCapacity": 45,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41365,
+              "day": 0,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SE202"
+            },
+            {
+              "id": 41366,
+              "day": 4,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "FU202"
+            }
+          ]
+        },
+        {
+          "id": 1833,
+          "code": "1191201-B",
+          "teacher": "Uscategui Blanco Mildren Yaneth",
+          "program": "119",
+          "maxCapacity": 10,
+          "availableCapacity": 5,
+          "sessions": [
+            {
+              "id": 41367,
+              "day": 1,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "FU203"
+            },
+            {
+              "id": 41368,
+              "day": 4,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "FU207"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1239,
+      "code": "1155102",
+      "name": "Matematicas discretas",
+      "credits": 3,
+      "semester": 1,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [],
+      "groups": [
+        {
+          "id": 1820,
+          "code": "1154305-A",
+          "teacher": "Puerto Cuadros Eduard Gilberto",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41339,
+              "day": 2,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SB401"
+            },
+            {
+              "id": 41340,
+              "day": 3,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "SA401"
+            }
+          ]
+        },
+        {
+          "id": 1929,
+          "code": "1154305-B",
+          "teacher": "Fuentes Camargo Jairo Alberto",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41341,
+              "day": 2,
+              "beginHour": 4,
+              "endHour": 6,
+              "classroom": "SB402"
+            },
+            {
+              "id": 41342,
+              "day": 3,
+              "beginHour": 2,
+              "endHour": 3,
+              "classroom": "SC402"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1240,
+      "code": "1155104",
+      "name": "Fundamentos de programacion",
+      "credits": 3,
+      "semester": 1,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [],
+      "groups": [
+        {
+          "id": 1821,
+          "code": "1154104-A",
+          "teacher": "Perez Gutierrez Boris Rainiero",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 0,
+          "sessions": [
+            {
+              "id": 41343,
+              "day": 3,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "SA401"
+            },
+            {
+              "id": 41344,
+              "day": 4,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SA401"
+            }
+          ]
+        },
+        {
+          "id": 1822,
+          "code": "1154104-B",
+          "teacher": "Vera Rivera Fredy Humberto",
+          "program": "115",
+          "maxCapacity": 30,
+          "availableCapacity": 1,
+          "sessions": [
+            {
+              "id": 41345,
+              "day": 3,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "SA403"
+            },
+            {
+              "id": 41346,
+              "day": 4,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SB404"
+            }
+          ]
+        },
+        {
+          "id": 1823,
+          "code": "1154104-C",
+          "teacher": "Fuentes Camargo Jairo Alberto",
+          "program": "115",
+          "maxCapacity": 25,
+          "availableCapacity": 24,
+          "sessions": [
+            {
+              "id": 41347,
+              "day": 3,
+              "beginHour": 0,
+              "endHour": 2,
+              "classroom": "SF402"
+            },
+            {
+              "id": 41348,
+              "day": 4,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SB402"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1241,
+      "code": "1155105",
+      "name": "Introduccion ing sistemas",
+      "credits": 3,
+      "semester": 1,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [],
+      "groups": []
+    },
+    {
+      "id": 1242,
+      "code": "1155106",
+      "name": "Comunicacion I",
+      "credits": 2,
+      "semester": 1,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [],
+      "groups": []
+    },
+    {
+      "id": 1243,
+      "code": "1155108",
+      "name": "Intro vida universitaria",
+      "credits": 1,
+      "semester": 1,
+      "requiredCredits": 0,
+      "type": "MANDATORY",
+      "requisites": [],
+      "groups": []
+    },
+    {
+      "id": 1246,
+      "code": "1151057",
+      "name": "Mineria de datos",
+      "credits": 3,
+      "semester": 10,
+      "requiredCredits": 0,
+      "type": "ELECTIVE",
+      "requisites": [],
+      "groups": []
+    },
+    {
+      "id": 1247,
+      "code": "1155315",
+      "name": "Ingles basico conversacional",
+      "credits": 2,
+      "semester": 3,
+      "requiredCredits": 31,
+      "type": "ELECTIVE",
+      "requisites": [],
+      "groups": [
+        {
+          "id": 1586,
+          "code": "1155315-A",
+          "teacher": "Velandia Puerto Omar Eduardo",
+          "program": "115",
+          "maxCapacity": 20,
+          "availableCapacity": 7,
+          "sessions": [
+            {
+              "id": 41597,
+              "day": 4,
+              "beginHour": 2,
+              "endHour": 4,
+              "classroom": "SA311"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
